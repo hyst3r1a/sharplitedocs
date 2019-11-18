@@ -107,5 +107,6 @@ interface TestInterface
     /// <returns>
     /// The method returns an integer.
     /// </returns>
+    /// <exception cref="System.Exception">Thrown when</exception>
     public int InterfaceMethod(int n);
 }
