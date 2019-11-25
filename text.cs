@@ -7,7 +7,7 @@
 /// Longer comments can be associated with a type or member through
 /// the remarks tag.
 /// </remarks>
-public class TestClass : TestInterface
+public class TestClass
 {
     /// <summary>
     /// Store for the Name property.
@@ -98,6 +98,8 @@ public class TestClass : TestInterface
 /// </remarks>
 interface TestInterface
 {
+    if (){
+    }
     /// <summary>
     /// Documentation that describes the method goes here.
     /// </summary>
@@ -108,5 +110,5 @@ interface TestInterface
     /// The method returns an integer.
     /// </returns>
     /// <exception cref="System.Exception">Thrown when</exception>
-    public int InterfaceMethod(int n);
+    public int InterfaceValue;
 }

@@ -1,0 +1,69 @@
+.j{
+    background: rgba(83, 244, 255, 0.24);
+    height:100%
+}
+jumbotron{
+    height:100%
+}
+.pag{
+    left:40px;
+}
+.j2{
+    background: rgba(0, 80, 199, 0.63)
+}
+.blue{
+    background: rgb(65,84,175)
+}
+
+code{
+    color:rgb(38,50,56);
+}
+.footer-copyright{
+    background: rgb(52,67,140)
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 250px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    /* Set the fixed height of the footer here */
+  }
+
+.just-padding {
+    padding: 15px;
+  }
+  
+  .list-group.list-group-root {
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .list-group.list-group-root .list-group {
+    margin-bottom: 0;
+  }
+  
+  .list-group.list-group-root .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+  }
+  
+  .list-group.list-group-root > .list-group-item:first-child {
+    border-top-width: 0;
+  }
+  
+  .list-group.list-group-root > .list-group > .list-group-item {
+    padding-left: 30px;
+  }
+  
+  .list-group.list-group-root > .list-group > .list-group > .list-group-item {
+    padding-left: 45px;
+  }
