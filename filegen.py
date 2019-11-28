@@ -27,7 +27,12 @@ def generate_index(list_names, name):
     a = f.read()
     a = a.replace("%DOCNAME%", name)
     for i in list_names:
-        if "<a>" + i + "</a><br>" not in a:
+        currentToken = None
+        for token in sharplitedocs.tokens:
+            if token.tokenLocalName == i:
+                currentToken = token
+                break
+        if "<p>"+i+"</p>"+"<a href="+currentToken.tokenFile+">" + "&nbsp&nbsp&nbsp&nbsp"+currentToken.tokenFile+"</a><br>" not in a:
             print(i)
             letter = i[0]
             finder = ""
@@ -35,7 +40,7 @@ def generate_index(list_names, name):
             index = a.find(finder)
             if (index >= 0):
                 print("Letter:", letter, "\nFinder:", finder, "Index:", index)
-                a = insert_char(a, index + len(finder), "<a>" + i + "</a><br>")
+                a = insert_char(a, index + len(finder), "<p>"+i+"</p>"+"<a href="+currentToken.tokenFile+">" + "&nbsp&nbsp&nbsp&nbsp"+currentToken.tokenFile+"</a><br>")
     result = open("1/index.html", "w")
     result.write(a)
 
@@ -91,7 +96,7 @@ def generate_item(tokens, itemname, name):
     namesline = "<h3>Members list</h3>\n<ol class=\"list-group\" style=\"left:20px\">"
 
     cards = "<h3>Detailed descriptions</h3>\n <hr>"
-    card1 = "<div class=\"card\" style=\"width: 80%\"><div class=\"card-body\"><h5 class=\"card-title\">"
+    card1 = "<div class=\"card\" style=\"width: 80%\"><div class=\"card-body\"><h5 class=\"card-title\" id="
 
     card2 = "</h5><p class=\"card-text\">"
 
@@ -105,7 +110,7 @@ def generate_item(tokens, itemname, name):
             usingline += k.tokenLocalName + "\n"
         else:
             if k.tokenLocalName != None:
-                namesline += "<li class=\"list-group-item\"><p>"+k.tokenType + ' ' + k.tokenLocalName + "</p></li>\n"
+                namesline += "<li class=\"list-group-item\"><a href=#"+k.tokenLocalName+">"+k.tokenType + ' ' + k.tokenLocalName + "</a></li>\n"
             else:
                 namesline += " "
     namesline += "</ol>"
@@ -116,16 +121,17 @@ def generate_item(tokens, itemname, name):
         if i.tokenType != "using":
             temp = ""
             for j in tokens:
-                if j.superToken == i.tokenNum:
-                    temp += "-" + j.tokenLocalName if j.tokenLocalName is not None else " " + "\n"
-            cards += card1+i.tokenType+"     " +i.tokenLocalName if i.tokenLocalName is not None else " " + " "
+                if j.superToken == i.tokenNum and j.tokenType != "using":
+                    temp += "-" + j.tokenLocalName if j.tokenLocalName is not None else " "
+                    temp += "<br>"
+            cards += card1+i.tokenLocalName+">"+i.tokenType+"     " +i.tokenLocalName if i.tokenLocalName is not None else " " + " "
             cards += card2
             cards += str(i.tokenComments)
             cards += card3
             cards += temp
             cards += card4
             for z in tokens:
-                if z.tokenNum == i.superToken:
+                if z.tokenNum == i.superToken and z.tokenType != "using":
                     cards += z.tokenType
                     cards += " "
                     cards += z.tokenLocalName

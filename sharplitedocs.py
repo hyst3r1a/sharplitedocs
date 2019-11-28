@@ -17,6 +17,7 @@ done = False
 tokens = []
 localtokens = []
 files = 0
+filename  = ""
 
 
 class Token:
@@ -27,6 +28,7 @@ class Token:
     superToken = 0
     tokenCommons = []
     tokenComments = []
+    tokenFile = ""
 
     def __init__(self):
         self.tokenComments = list()
@@ -91,6 +93,7 @@ def what_it_is(string):
     global currentLevel
     global currentIndex
     global tree
+    global filename
     currentSuper = hierarchy[len(hierarchy) - 1] if len(hierarchy) > 0 else 0
     # function to get the type of commented value
 
@@ -109,6 +112,7 @@ def what_it_is(string):
             tree += str(currentSuper) + "class\n"
             # fill the Token object
             temptoken = Token()
+            temptoken.tokenFile = filename
             temptoken.superToken = currentSuper
             temptoken.tokenComments = list()
             for item in comments:
@@ -149,6 +153,7 @@ def what_it_is(string):
 
             # fill the Token object
             temptoken = Token()
+            temptoken.tokenFile = filename
             temptoken.superToken = currentSuper
             temptoken.tokenComments = list()
             for item in comments:
@@ -178,6 +183,7 @@ def what_it_is(string):
             tree += str(currentSuper) + "struct\n"
             # fill the Token object
             temptoken = Token()
+            temptoken.tokenFile = filename
             temptoken.superToken = currentSuper
             temptoken.tokenComments = list()
             for item in comments:
@@ -215,6 +221,7 @@ def what_it_is(string):
             tree += str(currentSuper) + "interface\n"
             # fill the Token object
             temptoken = Token()
+            temptoken.tokenFile = filename
             temptoken.superToken = currentSuper
             temptoken.tokenComments = list()
             for item in comments:
@@ -252,6 +259,7 @@ def what_it_is(string):
             tree += str(currentSuper) + "namespace\n"
             # fill the Token object
             temptoken = Token()
+            temptoken.tokenFile = filename
             temptoken.superToken = currentSuper
             temptoken.tokenComments = list()
             for item in comments:
@@ -282,6 +290,7 @@ def what_it_is(string):
                 tree += str(currentSuper) + "value\n"
                 # fill the Token object
                 temptoken = Token()
+                temptoken.tokenFile = filename
                 temptoken.superToken = currentSuper
                 temptoken.tokenComments = list()
                 for item in comments:
@@ -291,7 +300,7 @@ def what_it_is(string):
                 comments.clear()
                 print("ADDED", temptoken.tokenComments)
                 temptoken.tokenType = "value"
-                temptoken.tokenNum = currentIndex + 1
+                temptoken.tokenNum = -1
                 readingAncestors = False
                 for temp in splitted:
                     if splitted.index(temp) < len(splitted):
@@ -315,6 +324,7 @@ def what_it_is(string):
                 tree += str(currentSuper) + "method\n"
                 # fill the Token object
                 temptoken = Token()
+                temptoken.tokenFile = filename
                 temptoken.superToken = currentSuper
                 temptoken.tokenComments = list()
                 for item in comments:
@@ -349,6 +359,7 @@ def what_it_is(string):
                 tree += str(currentSuper) + "property\n"
                 # fill the Token object
                 temptoken = Token()
+                temptoken.tokenFile = filename
                 temptoken.superToken = currentSuper
                 temptoken.tokenComments = list()
                 for item in comments:
@@ -377,7 +388,20 @@ def what_it_is(string):
                 localtokens.append((temptoken))
     elif string.lstrip().startswith("using"):
         print("Using directive", string.strip())
-
+        temptoken = Token()
+        temptoken.tokenFile = filename
+        temptoken.superToken = currentSuper
+        temptoken.tokenComments = list()
+        for item in comments:
+            temptoken.tokenComments.append(item)
+        temptoken.tokenLocalName = string+"<br>"
+        print("ADDED", temptoken.tokenComments)
+        comments.clear()
+        print("ADDED", temptoken.tokenComments)
+        temptoken.tokenType = "using"
+        temptoken.tokenNum = currentIndex
+        tokens.append(temptoken)
+        localtokens.append((temptoken))
     for a in string:
         if a == "{":
             currentLevel += 1
@@ -420,12 +444,13 @@ def insert_str(string, str_to_insert, index):
 
 def main(file):
     global localtokens
+    global filename
     custom_fig = Figlet(font='ogre')
     print(custom_fig.renderText('Hyst3r1a'))
     print("\n Sharp Lite Docs - a C# Documentation Generator")
     print("\n Michael Gorshenin, 2019\n\n")
+    filename = file
 
-    # os.system('say "Pyton docs generator" &');
 
     t = threading.Thread(target=animate)
     t.start()
