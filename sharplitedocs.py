@@ -53,12 +53,10 @@ def start_parse(filestring):
     global files
     f = open(filestring, 'r')
     a = f.readlines()
-    # for b in range(len(a)):
-    # print(a[b], "\n")
     flag = False
     for b in range(len(a)):
         # time.sleep(0.15)
-        print(a[b])
+        # print(a[b])
         if a[b].strip().startswith("///"):
             comments.append(a[b].strip())
             print("COMMENT", a[b].strip())
@@ -86,7 +84,7 @@ def start_parse(filestring):
     temporary_dox()
     done = True
 
-    filegen.generate_main_page("Azure PowerShell", "v0.1", str(files), str(len(tokens)), str(0), str(0))
+
 
 
 def what_it_is(string):

@@ -19,12 +19,13 @@ def generate_main_page(name, ver, tfiles, tent, tname, tclass):
     result.write(a)
 
 
-def generate_index(list_names):
+def generate_index(list_names, name):
     print("Generating index")
     print(list_names)
     list_names.sort(reverse=True)
     f = open("index.html", 'r')
     a = f.read()
+    a = a.replace("%DOCNAME%", name)
     for i in list_names:
         if "<a>" + i + "</a><br>" not in a:
             print(i)
@@ -39,11 +40,12 @@ def generate_index(list_names):
     result.write(a)
 
 
-def generate_dirtree(rootdir):
+def generate_dirtree(rootdir, name):
     print("Generating dirtree")
     start = "<div class=\"list-group list-group-root well\">"
     f = open("dirtree.html", 'r')
     a = f.read()
+    a = a.replace("%DOCNAME%", name)
     tree = os.walk(rootdir)
     insertion = ""
     count = 0
@@ -103,7 +105,7 @@ def generate_item(tokens, itemname, name):
             usingline += k.tokenLocalName + "\n"
         else:
             if k.tokenLocalName != None:
-                namesline += "<li class=\"list-group-item\"><p>"+k.tokenLocalName + "</p></li>\n"
+                namesline += "<li class=\"list-group-item\"><p>"+k.tokenType + ' ' + k.tokenLocalName + "</p></li>\n"
             else:
                 namesline += " "
     namesline += "</ol>"
@@ -116,7 +118,7 @@ def generate_item(tokens, itemname, name):
             for j in tokens:
                 if j.superToken == i.tokenNum:
                     temp += "-" + j.tokenLocalName if j.tokenLocalName is not None else " " + "\n"
-            cards += card1+i.tokenType+i.tokenLocalName if i.tokenLocalName is not None else " "
+            cards += card1+i.tokenType+"     " +i.tokenLocalName if i.tokenLocalName is not None else " " + " "
             cards += card2
             cards += str(i.tokenComments)
             cards += card3
