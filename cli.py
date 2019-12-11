@@ -41,8 +41,8 @@ def all_parsing(rootdir, destination, name):
     if os.path.isdir(rootdir):
         for subdir, dirs, files in os.walk(rootdir):
             for file in files:
-                if file.endswith('.cs'):
-                    #print(os.path.join(subdir, file))
+                if file.endswith('.cs') and not file.endswith('.bindings.cs'):
+                    print(os.path.join(subdir, file))
                     sharplitedocs.main(os.path.join(subdir, file))
                     #print(os.path.join(subdir, file))
                     # input("Debug stop")

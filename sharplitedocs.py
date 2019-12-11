@@ -92,7 +92,11 @@ def start_parse(filestring):
 
 def find_usages(token):
     strings_using = " "
-    lookup = token.tokenLocalName.split()[1]
+    str_py = token.tokenLocalName.split()
+    if len(str_py)>1:
+        lookup = token.tokenLocalName.split()[1]
+    else:
+        return "-"
     for num, line in enumerate(f, 1):
         if lookup in line:
             print('found at line:', num)

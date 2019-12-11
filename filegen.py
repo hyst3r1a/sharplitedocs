@@ -148,5 +148,8 @@ def generate_item(tokens, itemname, name, destination):
 
 def insert_char(mystring, position, chartoinsert):
     longi = len(mystring)
-    mystring = mystring[:position] + chartoinsert + mystring[position:]
+    print(len(sharplitedocs.tokens))
+
+    if isinstance(mystring, str) and isinstance(chartoinsert, str):
+        mystring = mystring[:position] + chartoinsert + mystring[position:]
     return mystring
