@@ -44,22 +44,30 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using System;<br> 
+using System.Collections.Generic;<br> 
+using System.Linq;<br> 
+using System.Management.Automation;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using System.Collections;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common;<br> 
+using Microsoft.WindowsAzure.Commands.Common.CustomAttributes;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Errors</p></li>
-<li class="list-group-item"><p>class ResolveError</p></li>
-<li class="list-group-item"><p>value AnyErrorParameterSet</p></li>
-<li class="list-group-item"><p>value LastErrorParameterSet</p></li>
-<li class="list-group-item"><p>property Error</p></li>
-<li class="list-group-item"><p>property Last</p></li>
-<li class="list-group-item"><p>method ExecuteCmdlet()</p></li>
-<li class="list-group-item"><p>method GetErrorVariable()</p></li>
-<li class="list-group-item"><p>method HandleError()</p></li>
-<li class="list-group-item"><p>method HandleException()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Errors>namespace Microsoft.Azure.Commands.Profile.Errors</a></li>
+<li class="list-group-item"><a href=#ResolveError>class ResolveError</a></li>
+<li class="list-group-item"><a href=#AnyErrorParameterSet>value AnyErrorParameterSet</a></li>
+<li class="list-group-item"><a href=#LastErrorParameterSet>value LastErrorParameterSet</a></li>
+<li class="list-group-item"><a href=#Error>property Error</a></li>
+<li class="list-group-item"><a href=#Last>property Last</a></li>
+<li class="list-group-item"><a href=#ExecuteCmdlet()>method ExecuteCmdlet()</a></li>
+<li class="list-group-item"><a href=#GetErrorVariable()>method GetErrorVariable()</a></li>
+<li class="list-group-item"><a href=#HandleError()>method HandleError()</a></li>
+<li class="list-group-item"><a href=#HandleException()>method HandleException()</a></li>
 </ol>
 
              
@@ -67,7 +75,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Errors</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ResolveError</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     ResolveError</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AnyErrorParameterSet-LastErrorParameterSet-Error-Last-ExecuteCmdlet()-GetErrorVariable()-HandleError()-HandleException()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Errors</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     AnyErrorParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     LastErrorParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     Error</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     Last</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     GetErrorVariable()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     HandleError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     HandleException()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Errors>namespace     Microsoft.Azure.Commands.Profile.Errors</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ResolveError<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ResolveError>class     ResolveError</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AnyErrorParameterSet<br>-LastErrorParameterSet<br>-Error<br>-Last<br>-ExecuteCmdlet()<br>-GetErrorVariable()<br>-HandleError()<br>-HandleException()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Errors</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AnyErrorParameterSet>value     AnyErrorParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LastErrorParameterSet>value     LastErrorParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Error>property     Error</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Last>property     Last</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ExecuteCmdlet()>method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetErrorVariable()>method     GetErrorVariable()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=HandleError()>method     HandleError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=HandleException()>method     HandleException()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ResolveError</p></div></div><br>
 
 
     </div>

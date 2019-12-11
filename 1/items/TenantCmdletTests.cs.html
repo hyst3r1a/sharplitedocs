@@ -44,21 +44,32 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.Azure.ServiceManagement.Common.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using Xunit;<br> 
+using Xunit.Abstractions;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Test</p></li>
-<li class="list-group-item"><p>class TenantCmdletTests</p></li>
-<li class="list-group-item"><p>value dataStore;</p></li>
-<li class="list-group-item"><p>value commandRuntimeMock;</p></li>
-<li class="list-group-item"><p>method TenantCmdletTests()</p></li>
-<li class="list-group-item"><p>method GetTenantWithTenantParameter()</p></li>
-<li class="list-group-item"><p>method GetTenantWithDomainParameter()</p></li>
-<li class="list-group-item"><p>method GetTenantWithoutParameters()</p></li>
-<li class="list-group-item"><p>method Login()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Test>namespace Microsoft.Azure.Commands.Profile.Test</a></li>
+<li class="list-group-item"><a href=#TenantCmdletTests>class TenantCmdletTests</a></li>
+<li class="list-group-item"><a href=#dataStore;>value dataStore;</a></li>
+<li class="list-group-item"><a href=#commandRuntimeMock;>value commandRuntimeMock;</a></li>
+<li class="list-group-item"><a href=#TenantCmdletTests()>method TenantCmdletTests()</a></li>
+<li class="list-group-item"><a href=#GetTenantWithTenantParameter()>method GetTenantWithTenantParameter()</a></li>
+<li class="list-group-item"><a href=#GetTenantWithDomainParameter()>method GetTenantWithDomainParameter()</a></li>
+<li class="list-group-item"><a href=#GetTenantWithoutParameters()>method GetTenantWithoutParameters()</a></li>
+<li class="list-group-item"><a href=#Login()>method Login()</a></li>
 </ol>
 
              
@@ -66,7 +77,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-TenantCmdletTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     TenantCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;-commandRuntimeMock;-TenantCmdletTests()-GetTenantWithTenantParameter()-GetTenantWithDomainParameter()-GetTenantWithoutParameters()-Login()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TenantCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     GetTenantWithTenantParameter()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     GetTenantWithDomainParameter()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     GetTenantWithoutParameters()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     Login()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Test>namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-TenantCmdletTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TenantCmdletTests>class     TenantCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;<br>-commandRuntimeMock;<br>-TenantCmdletTests()<br>-GetTenantWithTenantParameter()<br>-GetTenantWithDomainParameter()<br>-GetTenantWithoutParameters()<br>-Login()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=dataStore;>value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=commandRuntimeMock;>value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TenantCmdletTests()>method     TenantCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetTenantWithTenantParameter()>method     GetTenantWithTenantParameter()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetTenantWithDomainParameter()>method     GetTenantWithDomainParameter()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetTenantWithoutParameters()>method     GetTenantWithoutParameters()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Login()>method     Login()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TenantCmdletTests</p></div></div><br>
 
 
     </div>

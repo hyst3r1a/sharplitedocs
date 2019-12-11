@@ -44,19 +44,33 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core;<br> 
+using Microsoft.Azure.Commands.Profile.Models.Core;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.Azure.ServiceManagement.Common.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Common;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using System;<br> 
+using Xunit;<br> 
+using Xunit.Abstractions;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class CommonDataCmdletTests</p></li>
-<li class="list-group-item"><p>method CommonDataCmdletTests()</p></li>
-<li class="list-group-item"><p>method CreateAzureRMProfile()</p></li>
-<li class="list-group-item"><p>method CreateAzureSMProfile()</p></li>
-<li class="list-group-item"><p>method RunDataProfileTest()</p></li>
-<li class="list-group-item"><p>method CanClearStorageAccountForRMProfile()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#CommonDataCmdletTests>class CommonDataCmdletTests</a></li>
+<li class="list-group-item"><a href=#CommonDataCmdletTests()>method CommonDataCmdletTests()</a></li>
+<li class="list-group-item"><a href=#CreateAzureRMProfile()>method CreateAzureRMProfile()</a></li>
+<li class="list-group-item"><a href=#CreateAzureSMProfile()>method CreateAzureSMProfile()</a></li>
+<li class="list-group-item"><a href=#RunDataProfileTest()>method RunDataProfileTest()</a></li>
+<li class="list-group-item"><a href=#CanClearStorageAccountForRMProfile()>method CanClearStorageAccountForRMProfile()</a></li>
 </ol>
 
              
@@ -64,7 +78,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CommonDataCmdletTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     CommonDataCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CommonDataCmdletTests()-CreateAzureRMProfile()-CreateAzureSMProfile()-RunDataProfileTest()-CanClearStorageAccountForRMProfile()</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CommonDataCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CreateAzureRMProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CreateAzureSMProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     RunDataProfileTest()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanClearStorageAccountForRMProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CommonDataCmdletTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CommonDataCmdletTests>class     CommonDataCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CommonDataCmdletTests()<br>-CreateAzureRMProfile()<br>-CreateAzureSMProfile()<br>-RunDataProfileTest()<br>-CanClearStorageAccountForRMProfile()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CommonDataCmdletTests()>method     CommonDataCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CreateAzureRMProfile()>method     CreateAzureRMProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CreateAzureSMProfile()>method     CreateAzureSMProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=RunDataProfileTest()>method     RunDataProfileTest()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanClearStorageAccountForRMProfile()>method     CanClearStorageAccountForRMProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CommonDataCmdletTests</p></div></div><br>
 
 
     </div>

@@ -44,19 +44,30 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.ResourceManager;<br> 
+using Microsoft.Azure.Commands.Profile.Common;<br> 
+using Microsoft.Azure.Commands.Profile.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Properties;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common.ArgumentCompleters;<br> 
+using Microsoft.Azure.Management.Internal.Resources;<br> 
+using Microsoft.Azure.Management.Internal.Resources.Models;<br> 
+using System;<br> 
+using System.Management.Automation;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Default</p></li>
-<li class="list-group-item"><p>class SetAzureRMDefaultCommand</p></li>
-<li class="list-group-item"><p>value ResourceGroupNameParameterSet</p></li>
-<li class="list-group-item"><p>property ResourceGroupName</p></li>
-<li class="list-group-item"><p>property Force</p></li>
-<li class="list-group-item"><p>method ExecuteCmdlet()</p></li>
-<li class="list-group-item"><p>method SetDefaultProperty()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Default>namespace Microsoft.Azure.Commands.Profile.Default</a></li>
+<li class="list-group-item"><a href=#SetAzureRMDefaultCommand>class SetAzureRMDefaultCommand</a></li>
+<li class="list-group-item"><a href=#ResourceGroupNameParameterSet>value ResourceGroupNameParameterSet</a></li>
+<li class="list-group-item"><a href=#ResourceGroupName>property ResourceGroupName</a></li>
+<li class="list-group-item"><a href=#Force>property Force</a></li>
+<li class="list-group-item"><a href=#ExecuteCmdlet()>method ExecuteCmdlet()</a></li>
+<li class="list-group-item"><a href=#SetDefaultProperty()>method SetDefaultProperty()</a></li>
 </ol>
 
              
@@ -64,7 +75,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Default</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-SetAzureRMDefaultCommand</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     SetAzureRMDefaultCommand</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ResourceGroupNameParameterSet-ResourceGroupName-Force-ExecuteCmdlet()-SetDefaultProperty()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Default</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     ResourceGroupNameParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     ResourceGroupName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     Force</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SetDefaultProperty()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Default>namespace     Microsoft.Azure.Commands.Profile.Default</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-SetAzureRMDefaultCommand<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetAzureRMDefaultCommand>class     SetAzureRMDefaultCommand</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ResourceGroupNameParameterSet<br>-ResourceGroupName<br>-Force<br>-ExecuteCmdlet()<br>-SetDefaultProperty()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Default</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ResourceGroupNameParameterSet>value     ResourceGroupNameParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ResourceGroupName>property     ResourceGroupName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Force>property     Force</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ExecuteCmdlet()>method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetDefaultProperty()>method     SetDefaultProperty()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SetAzureRMDefaultCommand</p></div></div><br>
 
 
     </div>

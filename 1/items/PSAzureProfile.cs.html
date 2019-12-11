@@ -44,20 +44,25 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using System.Collections.Generic;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Attributes;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Models.Core</p></li>
-<li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Models</p></li>
-<li class="list-group-item"><p>class PSAzureProfile</p></li>
-<li class="list-group-item"><p>value _env</p></li>
-<li class="list-group-item"><p>method PSAzureProfile()</p></li>
-<li class="list-group-item"><p>method AzureRmProfile()</p></li>
-<li class="list-group-item"><p>property Context</p></li>
-<li class="list-group-item"><p>method ToString()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Models.Core>namespace Microsoft.Azure.Commands.Profile.Models.Core</a></li>
+<li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Models>namespace Microsoft.Azure.Commands.Profile.Models</a></li>
+<li class="list-group-item"><a href=#PSAzureProfile>class PSAzureProfile</a></li>
+<li class="list-group-item"><a href=#_env>value _env</a></li>
+<li class="list-group-item"><a href=#PSAzureProfile()>method PSAzureProfile()</a></li>
+<li class="list-group-item"><a href=#AzureRmProfile()>method AzureRmProfile()</a></li>
+<li class="list-group-item"><a href=#Context>property Context</a></li>
+<li class="list-group-item"><a href=#ToString()>method ToString()</a></li>
 </ol>
 
              
@@ -65,7 +70,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Models.Core</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Models</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-PSAzureProfile</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     PSAzureProfile</h5><p class="card-text">['/// <summary>', '/// Credential and environment data for connecting with an Azure instance in the current session.', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text">-_env-PSAzureProfile()-AzureRmProfile()-Context-ToString()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Models</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _env</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     PSAzureProfile()</h5><p class="card-text">['/// <summary>', '/// Convert between implementations of AzureProfile.', '/// </summary>', '/// <param name="profile">The profile to convert.</param>', '/// <returns>The converted profile.</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     AzureRmProfile()</h5><p class="card-text">['/// <summary>', '/// Convert between implementations of AzureProfile.', '/// </summary>', '/// <param name="profile">The profile to convert.</param>', '/// <returns>The converted profile.</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     Context</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ToString()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Models.Core>namespace     Microsoft.Azure.Commands.Profile.Models.Core</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Models>namespace     Microsoft.Azure.Commands.Profile.Models</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-PSAzureProfile<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=PSAzureProfile>class     PSAzureProfile</h5><p class="card-text">['/// <summary>', '/// Credential and environment data for connecting with an Azure instance in the current session.', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text">-_env<br>-PSAzureProfile()<br>-AzureRmProfile()<br>-Context<br>-ToString()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Models</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_env>value     _env</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=PSAzureProfile()>method     PSAzureProfile()</h5><p class="card-text">['/// <summary>', '/// Convert between implementations of AzureProfile.', '/// </summary>', '/// <param name="profile">The profile to convert.</param>', '/// <returns>The converted profile.</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AzureRmProfile()>method     AzureRmProfile()</h5><p class="card-text">['/// <summary>', '/// Convert between implementations of AzureProfile.', '/// </summary>', '/// <param name="profile">The profile to convert.</param>', '/// <returns>The converted profile.</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Context>property     Context</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ToString()>method     ToString()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSAzureProfile</p></div></div><br>
 
 
     </div>

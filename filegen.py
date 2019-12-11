@@ -1,11 +1,10 @@
 import datetime
 import os
-
 import sharplitedocs
 
 
-def generate_main_page(name, ver, tfiles, tent, tname, tclass):
-    print("Generating main page")
+def generate_main_page(name, ver, tfiles, tent, tname, tclass, destination):
+    #  print("Generating main page")
     f = open("mainpage.html", 'r')
     a = f.read()
     a = a.replace("%DOCNAME%", name)
@@ -15,13 +14,13 @@ def generate_main_page(name, ver, tfiles, tent, tname, tclass):
     a = a.replace("%DOCDATE%", str(datetime.datetime.today()))
     a = a.replace("%TOTALNAMES%", tname)
     a = a.replace("%TOTALCLASSES%", tclass)
-    result = open("1/mainpage.html", "w")
+    result = open(destination + "mainpage.html", "w")
     result.write(a)
 
 
-def generate_index(list_names, name):
-    print("Generating index")
-    print(list_names)
+def generate_index(list_names, name, destination):
+    #  print("Generating index")
+    #  print(list_names)
     list_names.sort(reverse=True)
     f = open("index.html", 'r')
     a = f.read()
@@ -32,21 +31,21 @@ def generate_index(list_names, name):
             if token.tokenLocalName == i:
                 currentToken = token
                 break
-        if "<p>"+i+"</p>"+"<a href="+currentToken.tokenFile+">" + "&nbsp&nbsp&nbsp&nbsp"+currentToken.tokenFile+"</a><br>" not in a:
-            print(i)
+        if currentToken != None and "<p>"+i+"</p>"+"<a href=items/"+os.path.basename(currentToken.tokenFile)+".html"+">" + "&nbsp&nbsp&nbsp&nbsp"+currentToken.tokenFile+"</a><br>" not in a:
+            #  print(i)
             letter = i[0]
             finder = ""
             finder += "<span class=\"badge badge-secondary\">" + letter.upper() + "</span><br>"
             index = a.find(finder)
             if (index >= 0):
-                print("Letter:", letter, "\nFinder:", finder, "Index:", index)
-                a = insert_char(a, index + len(finder), "<p>"+i+"</p>"+"<a href="+currentToken.tokenFile+">" + "&nbsp&nbsp&nbsp&nbsp"+currentToken.tokenFile+"</a><br>")
-    result = open("1/index.html", "w")
+                #  print("Letter:", letter, "\nFinder:", finder, "Index:", index)
+                a = insert_char(a, index + len(finder), "<p>"+i+"</p>"+"<a href=items/"+os.path.basename(currentToken.tokenFile)+".html"+">" + "&nbsp&nbsp&nbsp&nbsp"+currentToken.tokenFile+"</a><br>")
+    result = open(destination + "index.html", "w")
     result.write(a)
 
 
-def generate_dirtree(rootdir, name):
-    print("Generating dirtree")
+def generate_dirtree(rootdir, name, destination):
+    #  print("Generating dirtree")
     start = "<div class=\"list-group list-group-root well\">"
     f = open("dirtree.html", 'r')
     a = f.read()
@@ -57,34 +56,38 @@ def generate_dirtree(rootdir, name):
     for i in tree:
         emptydir = True
 
-        print(i)
+        #  print(i)
         ws = i[0].count("/")
         if len(i[2]) > 0:
             for k in i[2]:
                 if k.endswith(".cs"):
                     emptydir = False
             if not emptydir:
-                print("<a href = \"#\" class =\"list-group-item\" >", ws * '&nbsp&nbsp', i[0], "</a>")
+                #  print("<a href = \"#\" class =\"list-group-item\" >", ws * '&nbsp&nbsp', i[0], "</a>")
                 insertion += "<a class =\"list-group-item\" >" + ws * '&nbsp' + i[0] + "</a>"
                 for j in i[2]:
                     if (j.endswith(".cs")):
                         count += 1
-                        print("<a href = \"1/items/" + j + "\" class =\"list-group-item\" >", ws * '&nbsp&nbsp', j,
-                              "</a>")
+                        #  print("<a href = \"1/items/" + j + "\" class =\"list-group-item\" >", ws * '&nbsp&nbsp', j,
+                              #"</a>")
                         insertion += (
                                     "<a href = \"items/" + j + ".html\" class =\"list-group-item\"" + "<span>" + "&nbsp&nbsp" * ws + "</span>" + j + "</a>")
-                        # print("<a href = \"#\" class =\"list-group-item\"" + "<span>" +"&nbsp&nbsp"*ws +"</span>" + j + "</a>")
-                        # print("Count:", count)
+                        # #  print("<a href = \"#\" class =\"list-group-item\"" + "<span>" +"&nbsp&nbsp"*ws +"</span>" + j + "</a>")
+                        # #  print("Count:", count)
+                    elif(j.endswith(".md")):
+                        count += 1
+                        insertion += (
+                                "<a href = " + j + " class =\"list-group-item\"" + "<span>" + "&nbsp&nbsp" * ws + "</span>" + j + "</a>")
     index = a.find(start)
-    print(index)
+    #  print(index)
     a = insert_char(a, index + len(start), insertion)
 
-    result = open("1/dirtree.html", "w")
+    result = open(destination + "dirtree.html", "w")
     result.write(a)
 
 
-def generate_item(tokens, itemname, name):
-    print("Generating item")
+def generate_item(tokens, itemname, name, destination):
+    #  print("Generating item")
     sharplitedocs.files += 1
 
     # First add using directives
@@ -107,7 +110,7 @@ def generate_item(tokens, itemname, name):
     card5 = "</p></div></div><br>"
     for k in tokens:
         if k.tokenType == "using":
-            usingline += k.tokenLocalName + "\n"
+            usingline += k.tokenLocalName + sharplitedocs.find_usages(k) + "\n"
         else:
             if k.tokenLocalName != None:
                 namesline += "<li class=\"list-group-item\"><a href=#"+k.tokenLocalName+">"+k.tokenType + ' ' + k.tokenLocalName + "</a></li>\n"
@@ -131,16 +134,16 @@ def generate_item(tokens, itemname, name):
             cards += temp
             cards += card4
             for z in tokens:
-                if z.tokenNum == i.superToken and z.tokenType != "using":
+                if z.tokenLocalName != None and z.tokenNum == i.superToken and z.tokenType != "using":
                     cards += z.tokenType
                     cards += " "
                     cards += z.tokenLocalName
             cards += card5
-            print(cards)
+            #  print(cards)
     a = a.replace("<h3>Detailed descriptions</h3>", cards)
     a = a.replace("%DOCNAME%", name)
     a = a.replace("%ITEMNAME%", itemname)
-    result = open("1/items/"+itemname+".html", "w")
+    result = open(destination + "items/"+os.path.basename(itemname)+".html", "w+")
     result.write(a)
 
 def insert_char(mystring, position, chartoinsert):

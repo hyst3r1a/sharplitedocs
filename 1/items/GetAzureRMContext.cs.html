@@ -44,18 +44,28 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models.Core;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common;<br> 
+using System.Management.Automation;<br> 
+using System;<br> 
+using System.Linq;<br> 
+using System.Collections.ObjectModel;<br> 
+using Microsoft.Azure.Commands.Profile.Properties;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile</p></li>
-<li class="list-group-item"><p>class GetAzureRMContextCommand</p></li>
-<li class="list-group-item"><p>value ListAllParameterSet</p></li>
-<li class="list-group-item"><p>property ListAvailable</p></li>
-<li class="list-group-item"><p>method ExecuteCmdlet()</p></li>
-<li class="list-group-item"><p>method GetDynamicParameters()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile>namespace Microsoft.Azure.Commands.Profile</a></li>
+<li class="list-group-item"><a href=#GetAzureRMContextCommand>class GetAzureRMContextCommand</a></li>
+<li class="list-group-item"><a href=#ListAllParameterSet>value ListAllParameterSet</a></li>
+<li class="list-group-item"><a href=#ListAvailable>property ListAvailable</a></li>
+<li class="list-group-item"><a href=#ExecuteCmdlet()>method ExecuteCmdlet()</a></li>
+<li class="list-group-item"><a href=#GetDynamicParameters()>method GetDynamicParameters()</a></li>
 </ol>
 
              
@@ -63,7 +73,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-GetAzureRMContextCommand</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     GetAzureRMContextCommand</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ListAllParameterSet-ListAvailable-ExecuteCmdlet()-GetDynamicParameters()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     ListAllParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     ListAvailable</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     GetDynamicParameters()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile>namespace     Microsoft.Azure.Commands.Profile</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-GetAzureRMContextCommand<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetAzureRMContextCommand>class     GetAzureRMContextCommand</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ListAllParameterSet<br>-ListAvailable<br>-ExecuteCmdlet()<br>-GetDynamicParameters()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ListAllParameterSet>value     ListAllParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ListAvailable>property     ListAvailable</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ExecuteCmdlet()>method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetDynamicParameters()>method     GetDynamicParameters()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMContextCommand</p></div></div><br>
 
 
     </div>

@@ -44,15 +44,27 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using System;<br> 
+using System.Threading;<br> 
+using System.Threading.Tasks;<br> 
+using System.Management.Automation;<br> 
+using System.Net.Http;<br> 
+using SendAsyncStepDelegate = Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Task<HttpResponseMessage>>, Task<HttpResponseMessage>>;<br> 
+using PipelineChangeDelegate = Action<Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Task<HttpResponseMessage>>, Task<HttpResponseMessage>>>;<br> 
+using EventListenerDelegate = Func<string, CancellationToken, Func<EventArgs>, Func<string, CancellationToken, Func<EventArgs>, Task>, System.Management.Automation.InvocationInfo, string, string, string, System.Exception, Task>;<br> 
+using GetParameterDelegate = Func<string, string, InvocationInfo, string, string, object>;<br> 
+using ModuleLoadPipelineDelegate = Action<string, string, Action<Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Task<HttpResponseMessage>>, Task<HttpResponseMessage>>>, Action<Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Task<HttpResponseMessage>>, Task<HttpResponseMessage>>>>;<br> 
+using NewRequestPipelineDelegate = Action<InvocationInfo, string, string, Action<Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Task<HttpResponseMessage>>, Task<HttpResponseMessage>>>, Action<Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Task<HttpResponseMessage>>, Task<HttpResponseMessage>>>>;<br> 
+using ArgumentCompleterDelegate = Func<string, InvocationInfo, string, string[], string[], string[]>;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Common</p></li>
-<li class="list-group-item"><p>class RegisterAzModule</p></li>
-<li class="list-group-item"><p>method ProcessRecord()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Common>namespace Microsoft.Azure.Commands.Common</a></li>
+<li class="list-group-item"><a href=#RegisterAzModule>class RegisterAzModule</a></li>
+<li class="list-group-item"><a href=#ProcessRecord()>method ProcessRecord()</a></li>
 </ol>
 
              
@@ -60,7 +72,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-RegisterAzModule</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     RegisterAzModule</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ProcessRecord()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ProcessRecord()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RegisterAzModule</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Common>namespace     Microsoft.Azure.Commands.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-RegisterAzModule<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=RegisterAzModule>class     RegisterAzModule</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ProcessRecord()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ProcessRecord()>method     ProcessRecord()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RegisterAzModule</p></div></div><br>
 
 
     </div>

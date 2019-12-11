@@ -44,23 +44,38 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Core;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.ServiceManagement.Common.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Xunit;<br> 
+using Xunit.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using System;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common;<br> 
+using Moq;<br> 
+using System.IO;<br> 
+using System.Text;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class SessionInitializationTests</p></li>
-<li class="list-group-item"><p>value dataStore;</p></li>
-<li class="list-group-item"><p>value commandRuntimeMock;</p></li>
-<li class="list-group-item"><p>method SessionInitializationTests()</p></li>
-<li class="list-group-item"><p>method DataCollectionSettingPreventsFileWrite()</p></li>
-<li class="list-group-item"><p>method TestInitializationCannotCheckDirectoryExistence()</p></li>
-<li class="list-group-item"><p>method TestInitializationCannotCheckFileExistence()</p></li>
-<li class="list-group-item"><p>method TestInitializationCannotRead()</p></li>
-<li class="list-group-item"><p>method TestInitializationCannotCreateDirectory()</p></li>
-<li class="list-group-item"><p>method TestInitializationCannotWrite()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#SessionInitializationTests>class SessionInitializationTests</a></li>
+<li class="list-group-item"><a href=#dataStore;>value dataStore;</a></li>
+<li class="list-group-item"><a href=#commandRuntimeMock;>value commandRuntimeMock;</a></li>
+<li class="list-group-item"><a href=#SessionInitializationTests()>method SessionInitializationTests()</a></li>
+<li class="list-group-item"><a href=#DataCollectionSettingPreventsFileWrite()>method DataCollectionSettingPreventsFileWrite()</a></li>
+<li class="list-group-item"><a href=#TestInitializationCannotCheckDirectoryExistence()>method TestInitializationCannotCheckDirectoryExistence()</a></li>
+<li class="list-group-item"><a href=#TestInitializationCannotCheckFileExistence()>method TestInitializationCannotCheckFileExistence()</a></li>
+<li class="list-group-item"><a href=#TestInitializationCannotRead()>method TestInitializationCannotRead()</a></li>
+<li class="list-group-item"><a href=#TestInitializationCannotCreateDirectory()>method TestInitializationCannotCreateDirectory()</a></li>
+<li class="list-group-item"><a href=#TestInitializationCannotWrite()>method TestInitializationCannotWrite()</a></li>
 </ol>
 
              
@@ -68,7 +83,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-SessionInitializationTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     SessionInitializationTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;-commandRuntimeMock;-SessionInitializationTests()-DataCollectionSettingPreventsFileWrite()-TestInitializationCannotCheckDirectoryExistence()-TestInitializationCannotCheckFileExistence()-TestInitializationCannotRead()-TestInitializationCannotCreateDirectory()-TestInitializationCannotWrite()</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SessionInitializationTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     DataCollectionSettingPreventsFileWrite()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestInitializationCannotCheckDirectoryExistence()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestInitializationCannotCheckFileExistence()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestInitializationCannotRead()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestInitializationCannotCreateDirectory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestInitializationCannotWrite()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-SessionInitializationTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SessionInitializationTests>class     SessionInitializationTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;<br>-commandRuntimeMock;<br>-SessionInitializationTests()<br>-DataCollectionSettingPreventsFileWrite()<br>-TestInitializationCannotCheckDirectoryExistence()<br>-TestInitializationCannotCheckFileExistence()<br>-TestInitializationCannotRead()<br>-TestInitializationCannotCreateDirectory()<br>-TestInitializationCannotWrite()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=dataStore;>value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=commandRuntimeMock;>value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SessionInitializationTests()>method     SessionInitializationTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=DataCollectionSettingPreventsFileWrite()>method     DataCollectionSettingPreventsFileWrite()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestInitializationCannotCheckDirectoryExistence()>method     TestInitializationCannotCheckDirectoryExistence()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestInitializationCannotCheckFileExistence()>method     TestInitializationCannotCheckFileExistence()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestInitializationCannotRead()>method     TestInitializationCannotRead()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestInitializationCannotCreateDirectory()>method     TestInitializationCannotCreateDirectory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestInitializationCannotWrite()>method     TestInitializationCannotWrite()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SessionInitializationTests</p></div></div><br>
 
 
     </div>

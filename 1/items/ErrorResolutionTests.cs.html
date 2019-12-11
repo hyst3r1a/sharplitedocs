@@ -44,20 +44,32 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Hyak.Common;<br> 
+using Microsoft.Azure.Commands.Profile.Errors;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using System;<br> 
+using System.Collections.Generic;<br> 
+using System.Management.Automation;<br> 
+using System.Net;<br> 
+using System.Net.Http;<br> 
+using Xunit;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Test</p></li>
-<li class="list-group-item"><p>class ErrorResolutionTests</p></li>
-<li class="list-group-item"><p>class TestHyakException</p></li>
-<li class="list-group-item"><p>method base()</p></li>
-<li class="list-group-item"><p>method DoesNotThrowWithNullError()</p></li>
-<li class="list-group-item"><p>method HandlesExceptionError()</p></li>
-<li class="list-group-item"><p>method HandlesNullValuesInArmExceptions()</p></li>
-<li class="list-group-item"><p>method LastParameterFindsLastError()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Test>namespace Microsoft.Azure.Commands.Profile.Test</a></li>
+<li class="list-group-item"><a href=#ErrorResolutionTests>class ErrorResolutionTests</a></li>
+<li class="list-group-item"><a href=#TestHyakException>class TestHyakException</a></li>
+<li class="list-group-item"><a href=#base()>method base()</a></li>
+<li class="list-group-item"><a href=#DoesNotThrowWithNullError()>method DoesNotThrowWithNullError()</a></li>
+<li class="list-group-item"><a href=#HandlesExceptionError()>method HandlesExceptionError()</a></li>
+<li class="list-group-item"><a href=#HandlesNullValuesInArmExceptions()>method HandlesNullValuesInArmExceptions()</a></li>
+<li class="list-group-item"><a href=#LastParameterFindsLastError()>method LastParameterFindsLastError()</a></li>
 </ol>
 
              
@@ -65,7 +77,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ErrorResolutionTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     ErrorResolutionTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-TestHyakException-DoesNotThrowWithNullError()-HandlesExceptionError()-HandlesNullValuesInArmExceptions()-LastParameterFindsLastError()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     TestHyakException</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-base()</p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     base()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TestHyakException</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     DoesNotThrowWithNullError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     HandlesExceptionError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     HandlesNullValuesInArmExceptions()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     LastParameterFindsLastError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Test>namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ErrorResolutionTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ErrorResolutionTests>class     ErrorResolutionTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-TestHyakException<br>-DoesNotThrowWithNullError()<br>-HandlesExceptionError()<br>-HandlesNullValuesInArmExceptions()<br>-LastParameterFindsLastError()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestHyakException>class     TestHyakException</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-base()<br></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=base()>method     base()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TestHyakException</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=DoesNotThrowWithNullError()>method     DoesNotThrowWithNullError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=HandlesExceptionError()>method     HandlesExceptionError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=HandlesNullValuesInArmExceptions()>method     HandlesNullValuesInArmExceptions()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LastParameterFindsLastError()>method     LastParameterFindsLastError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br>
 
 
     </div>

@@ -44,22 +44,34 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models.Core;<br> 
+using Microsoft.Azure.Commands.ScenarioTest.Extensions;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using System;<br> 
+using System.Globalization;<br> 
+using System.Management.Automation;<br> 
+using Xunit;<br> 
+using System.Linq;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class PSSerializationTests</p></li>
-<li class="list-group-item"><p>method CanConvertFullProfilet()</p></li>
-<li class="list-group-item"><p>method CanConvertProfileNullComponent()</p></li>
-<li class="list-group-item"><p>method CanConvertProfieWithCustomEnvironment()</p></li>
-<li class="list-group-item"><p>method ConConvertEmptyProfile()</p></li>
-<li class="list-group-item"><p>method CanConvertFullContext()</p></li>
-<li class="list-group-item"><p>method CanConvertContextNullComponent()</p></li>
-<li class="list-group-item"><p>method CanConvertMinimalContext()</p></li>
-<li class="list-group-item"><p>method CanConvertEmptyContext()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#PSSerializationTests>class PSSerializationTests</a></li>
+<li class="list-group-item"><a href=#CanConvertFullProfilet()>method CanConvertFullProfilet()</a></li>
+<li class="list-group-item"><a href=#CanConvertProfileNullComponent()>method CanConvertProfileNullComponent()</a></li>
+<li class="list-group-item"><a href=#CanConvertProfieWithCustomEnvironment()>method CanConvertProfieWithCustomEnvironment()</a></li>
+<li class="list-group-item"><a href=#ConConvertEmptyProfile()>method ConConvertEmptyProfile()</a></li>
+<li class="list-group-item"><a href=#CanConvertFullContext()>method CanConvertFullContext()</a></li>
+<li class="list-group-item"><a href=#CanConvertContextNullComponent()>method CanConvertContextNullComponent()</a></li>
+<li class="list-group-item"><a href=#CanConvertMinimalContext()>method CanConvertMinimalContext()</a></li>
+<li class="list-group-item"><a href=#CanConvertEmptyContext()>method CanConvertEmptyContext()</a></li>
 </ol>
 
              
@@ -67,7 +79,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-PSSerializationTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     PSSerializationTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CanConvertFullProfilet()-CanConvertProfileNullComponent()-CanConvertProfieWithCustomEnvironment()-ConConvertEmptyProfile()-CanConvertFullContext()-CanConvertContextNullComponent()-CanConvertMinimalContext()-CanConvertEmptyContext()</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvertFullProfilet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvertProfileNullComponent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvertProfieWithCustomEnvironment()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ConConvertEmptyProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvertFullContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvertContextNullComponent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvertMinimalContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvertEmptyContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-PSSerializationTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=PSSerializationTests>class     PSSerializationTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CanConvertFullProfilet()<br>-CanConvertProfileNullComponent()<br>-CanConvertProfieWithCustomEnvironment()<br>-ConConvertEmptyProfile()<br>-CanConvertFullContext()<br>-CanConvertContextNullComponent()<br>-CanConvertMinimalContext()<br>-CanConvertEmptyContext()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvertFullProfilet()>method     CanConvertFullProfilet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvertProfileNullComponent()>method     CanConvertProfileNullComponent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvertProfieWithCustomEnvironment()>method     CanConvertProfieWithCustomEnvironment()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ConConvertEmptyProfile()>method     ConConvertEmptyProfile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvertFullContext()>method     CanConvertFullContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvertContextNullComponent()>method     CanConvertContextNullComponent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvertMinimalContext()>method     CanConvertMinimalContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvertEmptyContext()>method     CanConvertEmptyContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class PSSerializationTests</p></div></div><br>
 
 
     </div>

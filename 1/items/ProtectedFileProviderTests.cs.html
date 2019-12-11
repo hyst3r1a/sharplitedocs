@@ -44,18 +44,33 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.ResourceManager;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using Moq;<br> 
+using System;<br> 
+using System.IO;<br> 
+using Xunit;<br> 
+using (var tempStream = ProtectedFileProvider.CreateFileProvider(protectedFile, FileProtection.SharedRead, store).Stream)<br> 
+using (var stream1 = ProtectedFileProvider.CreateFileProvider(protectedFile, FileProtection.SharedRead, store).Stream)<br> 
+using (var stream2 = ProtectedFileProvider.CreateFileProvider(protectedFile, FileProtection.SharedRead, store).Stream)<br> 
+using (var stream3 = ProtectedFileProvider.CreateFileProvider(protectedFile, FileProtection.SharedRead, store).Stream)<br> 
+using (var stream4 = ProtectedFileProvider.CreateFileProvider(protectedFile, FileProtection.SharedRead, store).Stream)<br> 
+using (var tempStream = ProtectedFileProvider.CreateFileProvider(protectedFile, FileProtection.ExclusiveWrite, store).Stream)<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class ProtectedFileProviderTests</p></li>
-<li class="list-group-item"><p>method MultipleConcurrentReadsAllowed()</p></li>
-<li class="list-group-item"><p>method WriteAccessIsExclusive()</p></li>
-<li class="list-group-item"><p>method FileProviderThrowsOnInvalidInputs()</p></li>
-<li class="list-group-item"><p>method LockFailureThrowsGoodException()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#ProtectedFileProviderTests>class ProtectedFileProviderTests</a></li>
+<li class="list-group-item"><a href=#MultipleConcurrentReadsAllowed()>method MultipleConcurrentReadsAllowed()</a></li>
+<li class="list-group-item"><a href=#WriteAccessIsExclusive()>method WriteAccessIsExclusive()</a></li>
+<li class="list-group-item"><a href=#FileProviderThrowsOnInvalidInputs()>method FileProviderThrowsOnInvalidInputs()</a></li>
+<li class="list-group-item"><a href=#LockFailureThrowsGoodException()>method LockFailureThrowsGoodException()</a></li>
 </ol>
 
              
@@ -63,7 +78,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ProtectedFileProviderTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     ProtectedFileProviderTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-MultipleConcurrentReadsAllowed()-WriteAccessIsExclusive()-FileProviderThrowsOnInvalidInputs()-LockFailureThrowsGoodException()</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     MultipleConcurrentReadsAllowed()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     WriteAccessIsExclusive()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     FileProviderThrowsOnInvalidInputs()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     LockFailureThrowsGoodException()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ProtectedFileProviderTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ProtectedFileProviderTests>class     ProtectedFileProviderTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-MultipleConcurrentReadsAllowed()<br>-WriteAccessIsExclusive()<br>-FileProviderThrowsOnInvalidInputs()<br>-LockFailureThrowsGoodException()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MultipleConcurrentReadsAllowed()>method     MultipleConcurrentReadsAllowed()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=WriteAccessIsExclusive()>method     WriteAccessIsExclusive()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=FileProviderThrowsOnInvalidInputs()>method     FileProviderThrowsOnInvalidInputs()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LockFailureThrowsGoodException()>method     LockFailureThrowsGoodException()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProtectedFileProviderTests</p></div></div><br>
 
 
     </div>

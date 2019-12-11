@@ -44,22 +44,29 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.ResourceManager;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using System;<br> 
+using Xunit;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class ContextModelTests</p></li>
-<li class="list-group-item"><p>property AzureAccount</p></li>
-<li class="list-group-item"><p>property AzureSubscription</p></li>
-<li class="list-group-item"><p>property AzureTenant</p></li>
-<li class="list-group-item"><p>value cache</p></li>
-<li class="list-group-item"><p>method SetContextCopiesAccountProperties()</p></li>
-<li class="list-group-item"><p>method SetDefaultContextCopiesAccountProperties()</p></li>
-<li class="list-group-item"><p>method SetContextWithNameCopiesAccountProperties()</p></li>
-<li class="list-group-item"><p>method SetDefaultContextWithNameCopiesAccountProperties()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#ContextModelTests>class ContextModelTests</a></li>
+<li class="list-group-item"><a href=#AzureAccount>property AzureAccount</a></li>
+<li class="list-group-item"><a href=#AzureSubscription>property AzureSubscription</a></li>
+<li class="list-group-item"><a href=#AzureTenant>property AzureTenant</a></li>
+<li class="list-group-item"><a href=#cache>value cache</a></li>
+<li class="list-group-item"><a href=#SetContextCopiesAccountProperties()>method SetContextCopiesAccountProperties()</a></li>
+<li class="list-group-item"><a href=#SetDefaultContextCopiesAccountProperties()>method SetDefaultContextCopiesAccountProperties()</a></li>
+<li class="list-group-item"><a href=#SetContextWithNameCopiesAccountProperties()>method SetContextWithNameCopiesAccountProperties()</a></li>
+<li class="list-group-item"><a href=#SetDefaultContextWithNameCopiesAccountProperties()>method SetDefaultContextWithNameCopiesAccountProperties()</a></li>
 </ol>
 
              
@@ -67,7 +74,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ContextModelTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     ContextModelTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureAccount-AzureSubscription-AzureTenant-cache-SetContextCopiesAccountProperties()-SetDefaultContextCopiesAccountProperties()-SetContextWithNameCopiesAccountProperties()-SetDefaultContextWithNameCopiesAccountProperties()</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     AzureAccount</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     AzureSubscription</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     AzureTenant</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     cache</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SetContextCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SetDefaultContextCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SetContextWithNameCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SetDefaultContextWithNameCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ContextModelTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ContextModelTests>class     ContextModelTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureAccount<br>-AzureSubscription<br>-AzureTenant<br>-cache<br>-SetContextCopiesAccountProperties()<br>-SetDefaultContextCopiesAccountProperties()<br>-SetContextWithNameCopiesAccountProperties()<br>-SetDefaultContextWithNameCopiesAccountProperties()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AzureAccount>property     AzureAccount</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AzureSubscription>property     AzureSubscription</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AzureTenant>property     AzureTenant</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=cache>value     cache</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetContextCopiesAccountProperties()>method     SetContextCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetDefaultContextCopiesAccountProperties()>method     SetDefaultContextCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetContextWithNameCopiesAccountProperties()>method     SetContextWithNameCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetDefaultContextWithNameCopiesAccountProperties()>method     SetDefaultContextWithNameCopiesAccountProperties()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ContextModelTests</p></div></div><br>
 
 
     </div>

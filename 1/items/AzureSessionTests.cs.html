@@ -44,17 +44,30 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Factories;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Test.Utilities.Common;<br> 
+using System;<br> 
+using System.Collections.Generic;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Xunit;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using System.IO;<br> 
+using Newtonsoft.Json;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Core;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class AzureSessionTests</p></li>
-<li class="list-group-item"><p>method InitializerCreatesTokenCacheFile()</p></li>
-<li class="list-group-item"><p>method TokenCacheIgnoresInvalidData()</p></li>
-<li class="list-group-item"><p>method TokenCacheUsesValidData()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#AzureSessionTests>class AzureSessionTests</a></li>
+<li class="list-group-item"><a href=#InitializerCreatesTokenCacheFile()>method InitializerCreatesTokenCacheFile()</a></li>
+<li class="list-group-item"><a href=#TokenCacheIgnoresInvalidData()>method TokenCacheIgnoresInvalidData()</a></li>
+<li class="list-group-item"><a href=#TokenCacheUsesValidData()>method TokenCacheUsesValidData()</a></li>
 </ol>
 
              
@@ -62,7 +75,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureSessionTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     AzureSessionTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-InitializerCreatesTokenCacheFile()-TokenCacheIgnoresInvalidData()-TokenCacheUsesValidData()</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     InitializerCreatesTokenCacheFile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureSessionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TokenCacheIgnoresInvalidData()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureSessionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TokenCacheUsesValidData()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureSessionTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureSessionTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AzureSessionTests>class     AzureSessionTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-InitializerCreatesTokenCacheFile()<br>-TokenCacheIgnoresInvalidData()<br>-TokenCacheUsesValidData()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=InitializerCreatesTokenCacheFile()>method     InitializerCreatesTokenCacheFile()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureSessionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TokenCacheIgnoresInvalidData()>method     TokenCacheIgnoresInvalidData()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureSessionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TokenCacheUsesValidData()>method     TokenCacheUsesValidData()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureSessionTests</p></div></div><br>
 
 
     </div>

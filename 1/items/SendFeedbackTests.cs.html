@@ -44,19 +44,32 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.Azure.ServiceManagement.Common.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Common;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using System;<br> 
+using Xunit;<br> 
+using Xunit.Abstractions;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Test</p></li>
-<li class="list-group-item"><p>class SendFeedbackTests</p></li>
-<li class="list-group-item"><p>value dataStore;</p></li>
-<li class="list-group-item"><p>value commandRuntimeMock;</p></li>
-<li class="list-group-item"><p>method SendFeedbackTests()</p></li>
-<li class="list-group-item"><p>method SendFeedbackFailsInNonInteractive()</p></li>
-<li class="list-group-item"><p>method CanSerializeSimpleFeedbackPayloadIntoProperForm()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Test>namespace Microsoft.Azure.Commands.Profile.Test</a></li>
+<li class="list-group-item"><a href=#SendFeedbackTests>class SendFeedbackTests</a></li>
+<li class="list-group-item"><a href=#dataStore;>value dataStore;</a></li>
+<li class="list-group-item"><a href=#commandRuntimeMock;>value commandRuntimeMock;</a></li>
+<li class="list-group-item"><a href=#SendFeedbackTests()>method SendFeedbackTests()</a></li>
+<li class="list-group-item"><a href=#SendFeedbackFailsInNonInteractive()>method SendFeedbackFailsInNonInteractive()</a></li>
+<li class="list-group-item"><a href=#CanSerializeSimpleFeedbackPayloadIntoProperForm()>method CanSerializeSimpleFeedbackPayloadIntoProperForm()</a></li>
 </ol>
 
              
@@ -64,7 +77,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-SendFeedbackTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     SendFeedbackTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;-commandRuntimeMock;-SendFeedbackTests()-SendFeedbackFailsInNonInteractive()-CanSerializeSimpleFeedbackPayloadIntoProperForm()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SendFeedbackTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SendFeedbackFailsInNonInteractive()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanSerializeSimpleFeedbackPayloadIntoProperForm()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Test>namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-SendFeedbackTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SendFeedbackTests>class     SendFeedbackTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;<br>-commandRuntimeMock;<br>-SendFeedbackTests()<br>-SendFeedbackFailsInNonInteractive()<br>-CanSerializeSimpleFeedbackPayloadIntoProperForm()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=dataStore;>value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=commandRuntimeMock;>value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SendFeedbackTests()>method     SendFeedbackTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SendFeedbackFailsInNonInteractive()>method     SendFeedbackFailsInNonInteractive()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanSerializeSimpleFeedbackPayloadIntoProperForm()>method     CanSerializeSimpleFeedbackPayloadIntoProperForm()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class SendFeedbackTests</p></div></div><br>
 
 
     </div>

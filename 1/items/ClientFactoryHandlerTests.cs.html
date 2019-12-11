@@ -44,23 +44,40 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using System;<br> 
+using System.Collections.Generic;<br> 
+using System.Net.Http;<br> 
+using System.Security;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Factories;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Xunit;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using System.Linq;<br> 
+using Microsoft.Azure.Management.Internal.Resources;<br> 
+using System.Threading;<br> 
+using System.Threading.Tasks;<br> 
+using Microsoft.Azure.Management.Storage.Version2017_10_01;<br> 
+using Microsoft.WindowsAzure.Management.Storage;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class ClientFactoryHandlerTests</p></li>
-<li class="list-group-item"><p>method DelegatingHandlersAreCloned()</p></li>
-<li class="list-group-item"><p>method AddsAppropriateRetryPolicy()</p></li>
-<li class="list-group-item"><p>class MockDelegatingHandler</p></li>
-<li class="list-group-item"><p>value cloneCount</p></li>
-<li class="list-group-item"><p>method Clone()</p></li>
-<li class="list-group-item"><p>class RetryTestHandler</p></li>
-<li class="list-group-item"><p>value times</p></li>
-<li class="list-group-item"><p>method SendAsync()</p></li>
-<li class="list-group-item"><p>method Clone()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#ClientFactoryHandlerTests>class ClientFactoryHandlerTests</a></li>
+<li class="list-group-item"><a href=#DelegatingHandlersAreCloned()>method DelegatingHandlersAreCloned()</a></li>
+<li class="list-group-item"><a href=#AddsAppropriateRetryPolicy()>method AddsAppropriateRetryPolicy()</a></li>
+<li class="list-group-item"><a href=#MockDelegatingHandler>class MockDelegatingHandler</a></li>
+<li class="list-group-item"><a href=#cloneCount>value cloneCount</a></li>
+<li class="list-group-item"><a href=#Clone()>method Clone()</a></li>
+<li class="list-group-item"><a href=#RetryTestHandler>class RetryTestHandler</a></li>
+<li class="list-group-item"><a href=#times>value times</a></li>
+<li class="list-group-item"><a href=#SendAsync()>method SendAsync()</a></li>
+<li class="list-group-item"><a href=#Clone()>method Clone()</a></li>
 </ol>
 
              
@@ -68,7 +85,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ClientFactoryHandlerTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     ClientFactoryHandlerTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-DelegatingHandlersAreCloned()-AddsAppropriateRetryPolicy()-MockDelegatingHandler-RetryTestHandler</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     DelegatingHandlersAreCloned()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     AddsAppropriateRetryPolicy()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     MockDelegatingHandler</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-cloneCount-Clone()</p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     cloneCount</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockDelegatingHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     Clone()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockDelegatingHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     RetryTestHandler</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-times-SendAsync()-Clone()</p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     times</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RetryTestHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SendAsync()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RetryTestHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     Clone()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RetryTestHandler</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ClientFactoryHandlerTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ClientFactoryHandlerTests>class     ClientFactoryHandlerTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-DelegatingHandlersAreCloned()<br>-AddsAppropriateRetryPolicy()<br>-MockDelegatingHandler<br>-RetryTestHandler<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=DelegatingHandlersAreCloned()>method     DelegatingHandlersAreCloned()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AddsAppropriateRetryPolicy()>method     AddsAppropriateRetryPolicy()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MockDelegatingHandler>class     MockDelegatingHandler</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-cloneCount<br>-Clone()<br></p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=cloneCount>value     cloneCount</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockDelegatingHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Clone()>method     Clone()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockDelegatingHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=RetryTestHandler>class     RetryTestHandler</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-times<br>-SendAsync()<br>-Clone()<br></p><hr><h6>Member of:</h6><p class="card-text">class ClientFactoryHandlerTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=times>value     times</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RetryTestHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SendAsync()>method     SendAsync()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RetryTestHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Clone()>method     Clone()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class RetryTestHandler</p></div></div><br>
 
 
     </div>

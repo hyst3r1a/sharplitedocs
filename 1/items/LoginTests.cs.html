@@ -44,30 +44,51 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Common.Authentication.Test.Cmdlets;<br> 
+using Hyak.Common;<br> 
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Core;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Factories;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common;<br> 
+using Microsoft.Azure.Internal.Subscriptions;<br> 
+using Microsoft.Azure.Internal.Subscriptions.Models;<br> 
+using Microsoft.Rest;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using Newtonsoft.Json;<br> 
+using System;<br> 
+using System.Collections.Generic;<br> 
+using System.IO;<br> 
+using System.Linq;<br> 
+using System.Management.Automation;<br> 
+using System.Security;<br> 
+using Xunit;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Common.Authentication.Test</p></li>
-<li class="list-group-item"><p>class LoginTests</p></li>
-<li class="list-group-item"><p>value _cmdlet;</p></li>
-<li class="list-group-item"><p>value _account;</p></li>
-<li class="list-group-item"><p>value _tenantId</p></li>
-<li class="list-group-item"><p>value _subscriptionId</p></li>
-<li class="list-group-item"><p>value _subscriptionName</p></li>
-<li class="list-group-item"><p>value _userName</p></li>
-<li class="list-group-item"><p>value _password</p></li>
-<li class="list-group-item"><p>value _applicationId</p></li>
-<li class="list-group-item"><p>value _certificateThumbprint</p></li>
-<li class="list-group-item"><p>method LoginTests()</p></li>
-<li class="list-group-item"><p>method Login()</p></li>
-<li class="list-group-item"><p>method LoginWithUsernameAndPassword()</p></li>
-<li class="list-group-item"><p>method LoginWithServicePrincipal()</p></li>
-<li class="list-group-item"><p>method LoginWithCertificate()</p></li>
-<li class="list-group-item"><p>method EnableAutosave()</p></li>
-<li class="list-group-item"><p>method IsValidPath()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Common.Authentication.Test>namespace Common.Authentication.Test</a></li>
+<li class="list-group-item"><a href=#LoginTests>class LoginTests</a></li>
+<li class="list-group-item"><a href=#_cmdlet;>value _cmdlet;</a></li>
+<li class="list-group-item"><a href=#_account;>value _account;</a></li>
+<li class="list-group-item"><a href=#_tenantId>value _tenantId</a></li>
+<li class="list-group-item"><a href=#_subscriptionId>value _subscriptionId</a></li>
+<li class="list-group-item"><a href=#_subscriptionName>value _subscriptionName</a></li>
+<li class="list-group-item"><a href=#_userName>value _userName</a></li>
+<li class="list-group-item"><a href=#_password>value _password</a></li>
+<li class="list-group-item"><a href=#_applicationId>value _applicationId</a></li>
+<li class="list-group-item"><a href=#_certificateThumbprint>value _certificateThumbprint</a></li>
+<li class="list-group-item"><a href=#LoginTests()>method LoginTests()</a></li>
+<li class="list-group-item"><a href=#Login()>method Login()</a></li>
+<li class="list-group-item"><a href=#LoginWithUsernameAndPassword()>method LoginWithUsernameAndPassword()</a></li>
+<li class="list-group-item"><a href=#LoginWithServicePrincipal()>method LoginWithServicePrincipal()</a></li>
+<li class="list-group-item"><a href=#LoginWithCertificate()>method LoginWithCertificate()</a></li>
+<li class="list-group-item"><a href=#EnableAutosave()>method EnableAutosave()</a></li>
+<li class="list-group-item"><a href=#IsValidPath()>method IsValidPath()</a></li>
 </ol>
 
              
@@ -75,7 +96,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-LoginTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     LoginTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-_cmdlet;-_account;-_tenantId-_subscriptionId-_subscriptionName-_userName-_password-_applicationId-_certificateThumbprint-LoginTests()-Login()-LoginWithUsernameAndPassword()-LoginWithServicePrincipal()-LoginWithCertificate()-EnableAutosave()-IsValidPath()</p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _cmdlet;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _account;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _tenantId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _subscriptionId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _subscriptionName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _userName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _password</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _applicationId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _certificateThumbprint</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     LoginTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     Login()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     LoginWithUsernameAndPassword()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     LoginWithServicePrincipal()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     LoginWithCertificate()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     EnableAutosave()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     IsValidPath()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Common.Authentication.Test>namespace     Common.Authentication.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-LoginTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginTests>class     LoginTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-_cmdlet;<br>-_account;<br>-_tenantId<br>-_subscriptionId<br>-_subscriptionName<br>-_userName<br>-_password<br>-_applicationId<br>-_certificateThumbprint<br>-LoginTests()<br>-Login()<br>-LoginWithUsernameAndPassword()<br>-LoginWithServicePrincipal()<br>-LoginWithCertificate()<br>-EnableAutosave()<br>-IsValidPath()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Common.Authentication.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_cmdlet;>value     _cmdlet;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_account;>value     _account;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_tenantId>value     _tenantId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_subscriptionId>value     _subscriptionId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_subscriptionName>value     _subscriptionName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_userName>value     _userName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_password>value     _password</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_applicationId>value     _applicationId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_certificateThumbprint>value     _certificateThumbprint</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginTests()>method     LoginTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Login()>method     Login()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithUsernameAndPassword()>method     LoginWithUsernameAndPassword()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithServicePrincipal()>method     LoginWithServicePrincipal()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithCertificate()>method     LoginWithCertificate()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=EnableAutosave()>method     EnableAutosave()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=IsValidPath()>method     IsValidPath()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginTests</p></div></div><br>
 
 
     </div>

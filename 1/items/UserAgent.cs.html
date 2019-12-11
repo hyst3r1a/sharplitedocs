@@ -44,17 +44,26 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using System;<br> 
+using System.Threading;<br> 
+using System.Threading.Tasks;<br> 
+using System.Net.Http;<br> 
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using System.Net.Http.Headers;<br> 
+using System.Management.Automation;<br> 
+using NextDelegate = Func<HttpRequestMessage, CancellationToken, Action, Func<string, CancellationToken, Func<EventArgs>, Task>, Task<HttpResponseMessage>>;<br> 
+using SignalDelegate = Func<string, CancellationToken, Func<EventArgs>, Task>;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Common</p></li>
-<li class="list-group-item"><p>class UserAgent</p></li>
-<li class="list-group-item"><p>method UserAgent()</p></li>
-<li class="list-group-item"><p>method UserAgent()</p></li>
-<li class="list-group-item"><p>method SendAsync()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Common>namespace Microsoft.Azure.Commands.Common</a></li>
+<li class="list-group-item"><a href=#UserAgent>class UserAgent</a></li>
+<li class="list-group-item"><a href=#UserAgent()>method UserAgent()</a></li>
+<li class="list-group-item"><a href=#UserAgent()>method UserAgent()</a></li>
+<li class="list-group-item"><a href=#SendAsync()>method SendAsync()</a></li>
 </ol>
 
              
@@ -62,7 +71,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-UserAgent</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     UserAgent</h5><p class="card-text">['/// <summary>', '/// Pipeline step for adding x-ms-unique-id header', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text">-UserAgent()-UserAgent()-SendAsync()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     UserAgent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UserAgent</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     UserAgent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UserAgent</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SendAsync()</h5><p class="card-text">['/// <summary>', '/// Pipeline delegate to add a unique id header to an outgoing request', '/// </summary>', '/// <param name="request">The outgpoing request</param>', '/// <param name="token">The cancellation token</param>', '/// <param name="cancel">Additional cancellation action if the operation is cancelled</param>', '/// <param name="signal">Signal delegate for logging events</param>', '/// <param name="next">The next setp in the pipeline</param>', '/// <returns>Amended pipeline for retrieving a response</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UserAgent</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Common>namespace     Microsoft.Azure.Commands.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-UserAgent<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=UserAgent>class     UserAgent</h5><p class="card-text">['/// <summary>', '/// Pipeline step for adding x-ms-unique-id header', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text">-UserAgent()<br>-UserAgent()<br>-SendAsync()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=UserAgent()>method     UserAgent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UserAgent</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=UserAgent()>method     UserAgent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UserAgent</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SendAsync()>method     SendAsync()</h5><p class="card-text">['/// <summary>', '/// Pipeline delegate to add a unique id header to an outgoing request', '/// </summary>', '/// <param name="request">The outgpoing request</param>', '/// <param name="token">The cancellation token</param>', '/// <param name="cancel">Additional cancellation action if the operation is cancelled</param>', '/// <param name="signal">Signal delegate for logging events</param>', '/// <param name="next">The next setp in the pipeline</param>', '/// <returns>Amended pipeline for retrieving a response</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UserAgent</p></div></div><br>
 
 
     </div>

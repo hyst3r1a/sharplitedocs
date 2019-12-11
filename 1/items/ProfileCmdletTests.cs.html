@@ -44,23 +44,37 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.Azure.ServiceManagement.Common.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Test.Utilities.Common;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using System;<br> 
+using System.Linq;<br> 
+using System.Management.Automation;<br> 
+using Xunit;<br> 
+using Xunit.Abstractions;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Test</p></li>
-<li class="list-group-item"><p>class ProfileCmdletTests</p></li>
-<li class="list-group-item"><p>value dataStore;</p></li>
-<li class="list-group-item"><p>value commandRuntimeMock;</p></li>
-<li class="list-group-item"><p>method ProfileCmdletTests()</p></li>
-<li class="list-group-item"><p>method SelectAzureProfileInMemory()</p></li>
-<li class="list-group-item"><p>method SelectAzureProfileBadPath()</p></li>
-<li class="list-group-item"><p>method SelectAzureProfileFromDisk()</p></li>
-<li class="list-group-item"><p>method SaveAzureProfileInMemory()</p></li>
-<li class="list-group-item"><p>method SaveAzureProfileNull()</p></li>
-<li class="list-group-item"><p>method SaveAzureProfileFromDefault()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Test>namespace Microsoft.Azure.Commands.Profile.Test</a></li>
+<li class="list-group-item"><a href=#ProfileCmdletTests>class ProfileCmdletTests</a></li>
+<li class="list-group-item"><a href=#dataStore;>value dataStore;</a></li>
+<li class="list-group-item"><a href=#commandRuntimeMock;>value commandRuntimeMock;</a></li>
+<li class="list-group-item"><a href=#ProfileCmdletTests()>method ProfileCmdletTests()</a></li>
+<li class="list-group-item"><a href=#SelectAzureProfileInMemory()>method SelectAzureProfileInMemory()</a></li>
+<li class="list-group-item"><a href=#SelectAzureProfileBadPath()>method SelectAzureProfileBadPath()</a></li>
+<li class="list-group-item"><a href=#SelectAzureProfileFromDisk()>method SelectAzureProfileFromDisk()</a></li>
+<li class="list-group-item"><a href=#SaveAzureProfileInMemory()>method SaveAzureProfileInMemory()</a></li>
+<li class="list-group-item"><a href=#SaveAzureProfileNull()>method SaveAzureProfileNull()</a></li>
+<li class="list-group-item"><a href=#SaveAzureProfileFromDefault()>method SaveAzureProfileFromDefault()</a></li>
 </ol>
 
              
@@ -68,7 +82,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ProfileCmdletTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     ProfileCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;-commandRuntimeMock;-ProfileCmdletTests()-SelectAzureProfileInMemory()-SelectAzureProfileBadPath()-SelectAzureProfileFromDisk()-SaveAzureProfileInMemory()-SaveAzureProfileNull()-SaveAzureProfileFromDefault()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ProfileCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SelectAzureProfileInMemory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SelectAzureProfileBadPath()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SelectAzureProfileFromDisk()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SaveAzureProfileInMemory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SaveAzureProfileNull()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SaveAzureProfileFromDefault()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Test>namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ProfileCmdletTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ProfileCmdletTests>class     ProfileCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;<br>-commandRuntimeMock;<br>-ProfileCmdletTests()<br>-SelectAzureProfileInMemory()<br>-SelectAzureProfileBadPath()<br>-SelectAzureProfileFromDisk()<br>-SaveAzureProfileInMemory()<br>-SaveAzureProfileNull()<br>-SaveAzureProfileFromDefault()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=dataStore;>value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=commandRuntimeMock;>value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ProfileCmdletTests()>method     ProfileCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SelectAzureProfileInMemory()>method     SelectAzureProfileInMemory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SelectAzureProfileBadPath()>method     SelectAzureProfileBadPath()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SelectAzureProfileFromDisk()>method     SelectAzureProfileFromDisk()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SaveAzureProfileInMemory()>method     SaveAzureProfileInMemory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SaveAzureProfileNull()>method     SaveAzureProfileNull()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SaveAzureProfileFromDefault()>method     SaveAzureProfileFromDefault()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ProfileCmdletTests</p></div></div><br>
 
 
     </div>

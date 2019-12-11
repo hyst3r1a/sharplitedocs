@@ -44,18 +44,28 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Profile.UninstallAzureRm;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.Azure.ServiceManagement.Common.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using System;<br> 
+using System.IO;<br> 
+using Xunit;<br> 
+using Xunit.Abstractions;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile.Test</p></li>
-<li class="list-group-item"><p>class UninstallAzureRmTests</p></li>
-<li class="list-group-item"><p>method UninstallAzureRmTests()</p></li>
-<li class="list-group-item"><p>method TestUninstallAzureRm()</p></li>
-<li class="list-group-item"><p>method TestUninstallAzureRmMultiplePaths()</p></li>
-<li class="list-group-item"><p>method TestUninstallAzureRmUnauthorized()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Test>namespace Microsoft.Azure.Commands.Profile.Test</a></li>
+<li class="list-group-item"><a href=#UninstallAzureRmTests>class UninstallAzureRmTests</a></li>
+<li class="list-group-item"><a href=#UninstallAzureRmTests()>method UninstallAzureRmTests()</a></li>
+<li class="list-group-item"><a href=#TestUninstallAzureRm()>method TestUninstallAzureRm()</a></li>
+<li class="list-group-item"><a href=#TestUninstallAzureRmMultiplePaths()>method TestUninstallAzureRmMultiplePaths()</a></li>
+<li class="list-group-item"><a href=#TestUninstallAzureRmUnauthorized()>method TestUninstallAzureRmUnauthorized()</a></li>
 </ol>
 
              
@@ -63,7 +73,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-UninstallAzureRmTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     UninstallAzureRmTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-UninstallAzureRmTests()-TestUninstallAzureRm()-TestUninstallAzureRmMultiplePaths()-TestUninstallAzureRmUnauthorized()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     UninstallAzureRmTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestUninstallAzureRm()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestUninstallAzureRmMultiplePaths()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     TestUninstallAzureRmUnauthorized()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Test>namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-UninstallAzureRmTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=UninstallAzureRmTests>class     UninstallAzureRmTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-UninstallAzureRmTests()<br>-TestUninstallAzureRm()<br>-TestUninstallAzureRmMultiplePaths()<br>-TestUninstallAzureRmUnauthorized()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=UninstallAzureRmTests()>method     UninstallAzureRmTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestUninstallAzureRm()>method     TestUninstallAzureRm()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestUninstallAzureRmMultiplePaths()>method     TestUninstallAzureRmMultiplePaths()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestUninstallAzureRmUnauthorized()>method     TestUninstallAzureRmUnauthorized()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class UninstallAzureRmTests</p></div></div><br>
 
 
     </div>

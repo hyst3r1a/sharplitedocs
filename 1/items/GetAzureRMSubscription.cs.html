@@ -44,24 +44,35 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Models;<br> 
+using Microsoft.Azure.Commands.Profile.Properties;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common;<br> 
+using System;<br> 
+using System.Diagnostics;<br> 
+using System.Linq;<br> 
+using System.Management.Automation;<br> 
+using System.Reflection;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Profile</p></li>
-<li class="list-group-item"><p>class GetAzureRMSubscriptionCommand</p></li>
-<li class="list-group-item"><p>value ListByIdInTenantParameterSet</p></li>
-<li class="list-group-item"><p>value ListByNameInTenantParameterSet</p></li>
-<li class="list-group-item"><p>value _client;</p></li>
-<li class="list-group-item"><p>property SubscriptionId</p></li>
-<li class="list-group-item"><p>property SubscriptionName</p></li>
-<li class="list-group-item"><p>property TenantId</p></li>
-<li class="list-group-item"><p>method BeginProcessing()</p></li>
-<li class="list-group-item"><p>method ExecuteCmdlet()</p></li>
-<li class="list-group-item"><p>method ThrowSubscriptionNotFoundError()</p></li>
-<li class="list-group-item"><p>method ThrowTenantAuthenticationError()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile>namespace Microsoft.Azure.Commands.Profile</a></li>
+<li class="list-group-item"><a href=#GetAzureRMSubscriptionCommand>class GetAzureRMSubscriptionCommand</a></li>
+<li class="list-group-item"><a href=#ListByIdInTenantParameterSet>value ListByIdInTenantParameterSet</a></li>
+<li class="list-group-item"><a href=#ListByNameInTenantParameterSet>value ListByNameInTenantParameterSet</a></li>
+<li class="list-group-item"><a href=#_client;>value _client;</a></li>
+<li class="list-group-item"><a href=#SubscriptionId>property SubscriptionId</a></li>
+<li class="list-group-item"><a href=#SubscriptionName>property SubscriptionName</a></li>
+<li class="list-group-item"><a href=#TenantId>property TenantId</a></li>
+<li class="list-group-item"><a href=#BeginProcessing()>method BeginProcessing()</a></li>
+<li class="list-group-item"><a href=#ExecuteCmdlet()>method ExecuteCmdlet()</a></li>
+<li class="list-group-item"><a href=#ThrowSubscriptionNotFoundError()>method ThrowSubscriptionNotFoundError()</a></li>
+<li class="list-group-item"><a href=#ThrowTenantAuthenticationError()>method ThrowTenantAuthenticationError()</a></li>
 </ol>
 
              
@@ -69,7 +80,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Profile</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-GetAzureRMSubscriptionCommand</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     GetAzureRMSubscriptionCommand</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ListByIdInTenantParameterSet-ListByNameInTenantParameterSet-_client;-SubscriptionId-SubscriptionName-TenantId-BeginProcessing()-ExecuteCmdlet()-ThrowSubscriptionNotFoundError()-ThrowTenantAuthenticationError()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     ListByIdInTenantParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     ListByNameInTenantParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     _client;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     SubscriptionId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     SubscriptionName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     TenantId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     BeginProcessing()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ThrowSubscriptionNotFoundError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ThrowTenantAuthenticationError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile>namespace     Microsoft.Azure.Commands.Profile</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-GetAzureRMSubscriptionCommand<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetAzureRMSubscriptionCommand>class     GetAzureRMSubscriptionCommand</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ListByIdInTenantParameterSet<br>-ListByNameInTenantParameterSet<br>-_client;<br>-SubscriptionId<br>-SubscriptionName<br>-TenantId<br>-BeginProcessing()<br>-ExecuteCmdlet()<br>-ThrowSubscriptionNotFoundError()<br>-ThrowTenantAuthenticationError()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ListByIdInTenantParameterSet>value     ListByIdInTenantParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ListByNameInTenantParameterSet>value     ListByNameInTenantParameterSet</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_client;>value     _client;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SubscriptionId>property     SubscriptionId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SubscriptionName>property     SubscriptionName</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TenantId>property     TenantId</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=BeginProcessing()>method     BeginProcessing()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ExecuteCmdlet()>method     ExecuteCmdlet()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ThrowSubscriptionNotFoundError()>method     ThrowSubscriptionNotFoundError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ThrowTenantAuthenticationError()>method     ThrowTenantAuthenticationError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class GetAzureRMSubscriptionCommand</p></div></div><br>
 
 
     </div>

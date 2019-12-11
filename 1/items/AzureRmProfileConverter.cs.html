@@ -44,20 +44,29 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Core;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions.Core;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common.Serialization;<br> 
+using Newtonsoft.Json;<br> 
+using System;<br> 
+using System.Collections.Generic;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.ResourceManager.Common</p></li>
-<li class="list-group-item"><p>class AzureRmProfileConverter</p></li>
-<li class="list-group-item"><p>method AzureRmProfileConverter()</p></li>
-<li class="list-group-item"><p>value CanWrite</p></li>
-<li class="list-group-item"><p>value CanRead</p></li>
-<li class="list-group-item"><p>method CanConvert()</p></li>
-<li class="list-group-item"><p>method ReadJson()</p></li>
-<li class="list-group-item"><p>method WriteJson()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.ResourceManager.Common>namespace Microsoft.Azure.Commands.ResourceManager.Common</a></li>
+<li class="list-group-item"><a href=#AzureRmProfileConverter>class AzureRmProfileConverter</a></li>
+<li class="list-group-item"><a href=#AzureRmProfileConverter()>method AzureRmProfileConverter()</a></li>
+<li class="list-group-item"><a href=#CanWrite>value CanWrite</a></li>
+<li class="list-group-item"><a href=#CanRead>value CanRead</a></li>
+<li class="list-group-item"><a href=#CanConvert()>method CanConvert()</a></li>
+<li class="list-group-item"><a href=#ReadJson()>method ReadJson()</a></li>
+<li class="list-group-item"><a href=#WriteJson()>method WriteJson()</a></li>
 </ol>
 
              
@@ -65,7 +74,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.ResourceManager.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureRmProfileConverter</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     AzureRmProfileConverter</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureRmProfileConverter()-CanWrite-CanRead-CanConvert()-ReadJson()-WriteJson()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.ResourceManager.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     AzureRmProfileConverter()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     CanWrite</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value     CanRead</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CanConvert()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     ReadJson()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     WriteJson()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.ResourceManager.Common>namespace     Microsoft.Azure.Commands.ResourceManager.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureRmProfileConverter<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AzureRmProfileConverter>class     AzureRmProfileConverter</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-AzureRmProfileConverter()<br>-CanWrite<br>-CanRead<br>-CanConvert()<br>-ReadJson()<br>-WriteJson()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.ResourceManager.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AzureRmProfileConverter()>method     AzureRmProfileConverter()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanWrite>value     CanWrite</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanRead>value     CanRead</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CanConvert()>method     CanConvert()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ReadJson()>method     ReadJson()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=WriteJson()>method     WriteJson()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class AzureRmProfileConverter</p></div></div><br>
 
 
     </div>

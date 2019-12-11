@@ -44,18 +44,24 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using System;<br> 
+using System.Threading;<br> 
+using System.Threading.Tasks;<br> 
+using System.Text.RegularExpressions;<br> 
+using GetEventData = Func<EventArgs>;<br> 
+using SignalDelegate = Func<string, CancellationToken, Func<EventArgs>, Task>;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Common</p></li>
-<li class="list-group-item"><p>method CreateLogEvent()</p></li>
-<li class="list-group-item"><p>method CreateDebugEvent()</p></li>
-<li class="list-group-item"><p>method CreateWarningEvent()</p></li>
-<li class="list-group-item"><p>method Print()</p></li>
-<li class="list-group-item"><p>method SplitPascalCase()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Common>namespace Microsoft.Azure.Commands.Common</a></li>
+<li class="list-group-item"><a href=#CreateLogEvent()>method CreateLogEvent()</a></li>
+<li class="list-group-item"><a href=#CreateDebugEvent()>method CreateDebugEvent()</a></li>
+<li class="list-group-item"><a href=#CreateWarningEvent()>method CreateWarningEvent()</a></li>
+<li class="list-group-item"><a href=#Print()>method Print()</a></li>
+<li class="list-group-item"><a href=#SplitPascalCase()>method SplitPascalCase()</a></li>
 </ol>
 
              
@@ -63,7 +69,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CreateLogEvent()-CreateDebugEvent()-CreateWarningEvent()-Print()-SplitPascalCase()</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CreateLogEvent()</h5><p class="card-text">['/// <summary>', '/// Create a tracing event containing a string message', '/// </summary>', '/// <param name="message">The string message to include in event data</param>', '/// <returns>Valid EventData containign the message</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CreateDebugEvent()</h5><p class="card-text">['/// <summary>', '/// Create a new debug message event', '/// </summary>', '/// <param name="message">The message</param>', '/// <returns>An event cotnainng the debug message</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CreateWarningEvent()</h5><p class="card-text">['/// <summary>', '/// Create a new debug message event', '/// </summary>', '/// <param name="message">The message</param>', '/// <returns>An event cotnainng the debug message</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     Print()</h5><p class="card-text">['/// <summary>', '/// Print event details to the provided stream', '/// </summary>', '/// <param name="getEventData">The event data to print</param>', '/// <param name="signal">The delegate for signaling events to the runtime</param>', '/// <param name="token">The cancellation token for the request</param>', '/// <param name="streamName">The name of the stream to print data to</param>', '/// <param name="eventName">The name of the event to be printed</param>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SplitPascalCase()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Common>namespace     Microsoft.Azure.Commands.Common</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CreateLogEvent()<br>-CreateDebugEvent()<br>-CreateWarningEvent()<br>-Print()<br>-SplitPascalCase()<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CreateLogEvent()>method     CreateLogEvent()</h5><p class="card-text">['/// <summary>', '/// Create a tracing event containing a string message', '/// </summary>', '/// <param name="message">The string message to include in event data</param>', '/// <returns>Valid EventData containign the message</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CreateDebugEvent()>method     CreateDebugEvent()</h5><p class="card-text">['/// <summary>', '/// Create a new debug message event', '/// </summary>', '/// <param name="message">The message</param>', '/// <returns>An event cotnainng the debug message</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CreateWarningEvent()>method     CreateWarningEvent()</h5><p class="card-text">['/// <summary>', '/// Create a new debug message event', '/// </summary>', '/// <param name="message">The message</param>', '/// <returns>An event cotnainng the debug message</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Print()>method     Print()</h5><p class="card-text">['/// <summary>', '/// Print event details to the provided stream', '/// </summary>', '/// <param name="getEventData">The event data to print</param>', '/// <param name="signal">The delegate for signaling events to the runtime</param>', '/// <param name="token">The cancellation token for the request</param>', '/// <param name="streamName">The name of the stream to print data to</param>', '/// <param name="eventName">The name of the event to be printed</param>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SplitPascalCase()>method     SplitPascalCase()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common</p></div></div><br>
 
 
     </div>

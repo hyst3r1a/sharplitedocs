@@ -44,21 +44,27 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using System;<br> 
+using System.Linq;<br> 
+using System.Net.Http;<br> 
+using System.Threading;<br> 
+using System.Threading.Tasks;<br> 
+using (var source = new CancellationTokenSource())<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>namespace Microsoft.Azure.Commands.Common.Authentication.Factories</p></li>
-<li class="list-group-item"><p>class CancelRetryHandler</p></li>
-<li class="list-group-item"><p>property =</p></li>
-<li class="list-group-item"><p>method CancelRetryHandler()</p></li>
-<li class="list-group-item"><p>method CancelRetryHandler()</p></li>
-<li class="list-group-item"><p>property WaitInterval</p></li>
-<li class="list-group-item"><p>property MaxTries</p></li>
-<li class="list-group-item"><p>method SendAsync()</p></li>
-<li class="list-group-item"><p>method Clone()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Common.Authentication.Factories>namespace Microsoft.Azure.Commands.Common.Authentication.Factories</a></li>
+<li class="list-group-item"><a href=#CancelRetryHandler>class CancelRetryHandler</a></li>
+<li class="list-group-item"><a href=#=>property =</a></li>
+<li class="list-group-item"><a href=#CancelRetryHandler()>method CancelRetryHandler()</a></li>
+<li class="list-group-item"><a href=#CancelRetryHandler()>method CancelRetryHandler()</a></li>
+<li class="list-group-item"><a href=#WaitInterval>property WaitInterval</a></li>
+<li class="list-group-item"><a href=#MaxTries>property MaxTries</a></li>
+<li class="list-group-item"><a href=#SendAsync()>method SendAsync()</a></li>
+<li class="list-group-item"><a href=#Clone()>method Clone()</a></li>
 </ol>
 
              
@@ -66,7 +72,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespace     Microsoft.Azure.Commands.Common.Authentication.Factories</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CancelRetryHandler</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">class     CancelRetryHandler</h5><p class="card-text">['/// <summary>', '/// Class to enable automatic retry of TaskCanceledExsceptions.', '/// Note that this follows the calling pattern in PowerShell, which does not pass cancellation tokens from', '/// the base cmdlet', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text">-=-CancelRetryHandler()-CancelRetryHandler()-WaitInterval-MaxTries-SendAsync()-Clone()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common.Authentication.Factories</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     =</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CancelRetryHandler()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     CancelRetryHandler()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     WaitInterval</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">property     MaxTries</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     SendAsync()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">method     Clone()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Common.Authentication.Factories>namespace     Microsoft.Azure.Commands.Common.Authentication.Factories</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-CancelRetryHandler<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CancelRetryHandler>class     CancelRetryHandler</h5><p class="card-text">['/// <summary>', '/// Class to enable automatic retry of TaskCanceledExsceptions.', '/// Note that this follows the calling pattern in PowerShell, which does not pass cancellation tokens from', '/// the base cmdlet', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text">-=<br>-CancelRetryHandler()<br>-CancelRetryHandler()<br>-WaitInterval<br>-MaxTries<br>-SendAsync()<br>-Clone()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Common.Authentication.Factories</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id==>property     =</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CancelRetryHandler()>method     CancelRetryHandler()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=CancelRetryHandler()>method     CancelRetryHandler()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=WaitInterval>property     WaitInterval</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MaxTries>property     MaxTries</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SendAsync()>method     SendAsync()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Clone()>method     Clone()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class CancelRetryHandler</p></div></div><br>
 
 
     </div>

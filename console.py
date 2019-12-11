@@ -14,9 +14,9 @@ def file_iteration(rootdir=r'/Users/mihailgorsenin/Desktop/src/Accounts'):
     for subdir, dirs, files in os.walk(rootdir):
         for file in files:
             if file.endswith(".cs"):
-                print(os.path.join(subdir, file))
+                #  print(os.path.join(subdir, file))
                 sharplitedocs.main(os.path.join(subdir, file))
-                print(os.path.join(subdir, file))
+                #  print(os.path.join(subdir, file))
                 #input("Debug stop")
                 filegen.generate_item(sharplitedocs.localtokens, file, "Azure PowerShell")
     filegen.generate_dirtree(rootdir, name)
