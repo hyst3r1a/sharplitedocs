@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../mainpage.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="#">Dirtree <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../dirtree.html">Dirtree <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="#">Index <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Index <span class="sr-only">(current)</span></a>
                       </li>
                       
                 
@@ -44,35 +44,54 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Commands.Common.Authentication;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Models;<br> 
+using Microsoft.Azure.ServiceManagement.Common.Models;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using System.Management.Automation;<br> 
+using System.Reflection;<br> 
+using Xunit;<br> 
+using Xunit.Abstractions;<br> 
+using System.Collections.Generic;<br> 
+using System.Net.Http.Headers;<br> 
+using System.Diagnostics;<br> 
+using System;<br> 
+using System.Security;<br> 
+using Microsoft.Azure.Commands.Common.Authentication.Abstractions;<br> 
+using Microsoft.Azure.Commands.ResourceManager.Common;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using System.Linq;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>Microsoft.Azure.Commands.Profile.Test</p></li>
-<li class="list-group-item"><p>LoginCmdletTests</p></li>
-<li class="list-group-item"><p>dataStore;</p></li>
-<li class="list-group-item"><p>commandRuntimeMock;</p></li>
-<li class="list-group-item"><p>LoginCmdletTests()</p></li>
-<li class="list-group-item"><p>GetPsVersionFromUserAgent()</p></li>
-<li class="list-group-item"><p>LoginWithSubscriptionAndTenant()</p></li>
-<li class="list-group-item"><p>LoginWithInvalidSubscriptionAndTenantThrowsCloudException()</p></li>
-<li class="list-group-item"><p>LoginWithSubscriptionAndNoTenant()</p></li>
-<li class="list-group-item"><p>LoginWithNoSubscriptionAndNoTenant()</p></li>
-<li class="list-group-item"><p>LoginWithNoSubscriptionAndTenant()</p></li>
-<li class="list-group-item"><p>LoginWithNoSubscriptionAndTenantDomain()</p></li>
-<li class="list-group-item"><p>LoginWithSubscriptionname()</p></li>
-<li class="list-group-item"><p>LoginWithRbacTenantOnly()</p></li>
-<li class="list-group-item"><p>LoginWithRbacSPNAndCertificateOnly()</p></li>
-<li class="list-group-item"><p>GetMultipleTenantsOnLogin()</p></li>
-<li class="list-group-item"><p>LoginWithEnvironementName()</p></li>
-<li class="list-group-item"><p>LoginWithCredentialParameterAndMSA()</p></li>
-<li class="list-group-item"><p>LoginWithAccessToken()</p></li>
-<li class="list-group-item"><p>LoginPopulatesContextList()</p></li>
-<li class="list-group-item"><p>ThrowOnUnknownEnvironment()</p></li>
-<li class="list-group-item"><p>LoginUsingSkipValidation()</p></li>
-<li class="list-group-item"><p>AddEnvironmentUpdatesContext()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Test>namespace Microsoft.Azure.Commands.Profile.Test</a></li>
+<li class="list-group-item"><a href=#LoginCmdletTests>class LoginCmdletTests</a></li>
+<li class="list-group-item"><a href=#dataStore;>value dataStore;</a></li>
+<li class="list-group-item"><a href=#commandRuntimeMock;>value commandRuntimeMock;</a></li>
+<li class="list-group-item"><a href=#LoginCmdletTests()>method LoginCmdletTests()</a></li>
+<li class="list-group-item"><a href=#GetPsVersionFromUserAgent()>method GetPsVersionFromUserAgent()</a></li>
+<li class="list-group-item"><a href=#LoginWithSubscriptionAndTenant()>method LoginWithSubscriptionAndTenant()</a></li>
+<li class="list-group-item"><a href=#LoginWithInvalidSubscriptionAndTenantThrowsCloudException()>method LoginWithInvalidSubscriptionAndTenantThrowsCloudException()</a></li>
+<li class="list-group-item"><a href=#LoginWithSubscriptionAndNoTenant()>method LoginWithSubscriptionAndNoTenant()</a></li>
+<li class="list-group-item"><a href=#LoginWithNoSubscriptionAndNoTenant()>method LoginWithNoSubscriptionAndNoTenant()</a></li>
+<li class="list-group-item"><a href=#LoginWithNoSubscriptionAndTenant()>method LoginWithNoSubscriptionAndTenant()</a></li>
+<li class="list-group-item"><a href=#LoginWithNoSubscriptionAndTenantDomain()>method LoginWithNoSubscriptionAndTenantDomain()</a></li>
+<li class="list-group-item"><a href=#LoginWithSubscriptionname()>method LoginWithSubscriptionname()</a></li>
+<li class="list-group-item"><a href=#LoginWithRbacTenantOnly()>method LoginWithRbacTenantOnly()</a></li>
+<li class="list-group-item"><a href=#LoginWithRbacSPNAndCertificateOnly()>method LoginWithRbacSPNAndCertificateOnly()</a></li>
+<li class="list-group-item"><a href=#GetMultipleTenantsOnLogin()>method GetMultipleTenantsOnLogin()</a></li>
+<li class="list-group-item"><a href=#LoginWithEnvironementName()>method LoginWithEnvironementName()</a></li>
+<li class="list-group-item"><a href=#LoginWithCredentialParameterAndMSA()>method LoginWithCredentialParameterAndMSA()</a></li>
+<li class="list-group-item"><a href=#LoginWithAccessToken()>method LoginWithAccessToken()</a></li>
+<li class="list-group-item"><a href=#LoginPopulatesContextList()>method LoginPopulatesContextList()</a></li>
+<li class="list-group-item"><a href=#ThrowOnUnknownEnvironment()>method ThrowOnUnknownEnvironment()</a></li>
+<li class="list-group-item"><a href=#LoginUsingSkipValidation()>method LoginUsingSkipValidation()</a></li>
+<li class="list-group-item"><a href=#AddEnvironmentUpdatesContext()>method AddEnvironmentUpdatesContext()</a></li>
 </ol>
 
              
@@ -80,7 +99,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespaceMicrosoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-LoginCmdletTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">classLoginCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;-commandRuntimeMock;-LoginCmdletTests()-GetPsVersionFromUserAgent()-LoginWithSubscriptionAndTenant()-LoginWithInvalidSubscriptionAndTenantThrowsCloudException()-LoginWithSubscriptionAndNoTenant()-LoginWithNoSubscriptionAndNoTenant()-LoginWithNoSubscriptionAndTenant()-LoginWithNoSubscriptionAndTenantDomain()-LoginWithSubscriptionname()-LoginWithRbacTenantOnly()-LoginWithRbacSPNAndCertificateOnly()-GetMultipleTenantsOnLogin()-LoginWithEnvironementName()-LoginWithCredentialParameterAndMSA()-LoginWithAccessToken()-LoginPopulatesContextList()-ThrowOnUnknownEnvironment()-LoginUsingSkipValidation()-AddEnvironmentUpdatesContext()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">valuedataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">valuecommandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodGetPsVersionFromUserAgent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithSubscriptionAndTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithInvalidSubscriptionAndTenantThrowsCloudException()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithSubscriptionAndNoTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithNoSubscriptionAndNoTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithNoSubscriptionAndTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithNoSubscriptionAndTenantDomain()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithSubscriptionname()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithRbacTenantOnly()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithRbacSPNAndCertificateOnly()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodGetMultipleTenantsOnLogin()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithEnvironementName()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithCredentialParameterAndMSA()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginWithAccessToken()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginPopulatesContextList()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodThrowOnUnknownEnvironment()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLoginUsingSkipValidation()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodAddEnvironmentUpdatesContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Test>namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-LoginCmdletTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginCmdletTests>class     LoginCmdletTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-dataStore;<br>-commandRuntimeMock;<br>-LoginCmdletTests()<br>-GetPsVersionFromUserAgent()<br>-LoginWithSubscriptionAndTenant()<br>-LoginWithInvalidSubscriptionAndTenantThrowsCloudException()<br>-LoginWithSubscriptionAndNoTenant()<br>-LoginWithNoSubscriptionAndNoTenant()<br>-LoginWithNoSubscriptionAndTenant()<br>-LoginWithNoSubscriptionAndTenantDomain()<br>-LoginWithSubscriptionname()<br>-LoginWithRbacTenantOnly()<br>-LoginWithRbacSPNAndCertificateOnly()<br>-GetMultipleTenantsOnLogin()<br>-LoginWithEnvironementName()<br>-LoginWithCredentialParameterAndMSA()<br>-LoginWithAccessToken()<br>-LoginPopulatesContextList()<br>-ThrowOnUnknownEnvironment()<br>-LoginUsingSkipValidation()<br>-AddEnvironmentUpdatesContext()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=dataStore;>value     dataStore;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=commandRuntimeMock;>value     commandRuntimeMock;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginCmdletTests()>method     LoginCmdletTests()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetPsVersionFromUserAgent()>method     GetPsVersionFromUserAgent()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithSubscriptionAndTenant()>method     LoginWithSubscriptionAndTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithInvalidSubscriptionAndTenantThrowsCloudException()>method     LoginWithInvalidSubscriptionAndTenantThrowsCloudException()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithSubscriptionAndNoTenant()>method     LoginWithSubscriptionAndNoTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithNoSubscriptionAndNoTenant()>method     LoginWithNoSubscriptionAndNoTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithNoSubscriptionAndTenant()>method     LoginWithNoSubscriptionAndTenant()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithNoSubscriptionAndTenantDomain()>method     LoginWithNoSubscriptionAndTenantDomain()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithSubscriptionname()>method     LoginWithSubscriptionname()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithRbacTenantOnly()>method     LoginWithRbacTenantOnly()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithRbacSPNAndCertificateOnly()>method     LoginWithRbacSPNAndCertificateOnly()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetMultipleTenantsOnLogin()>method     GetMultipleTenantsOnLogin()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithEnvironementName()>method     LoginWithEnvironementName()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithCredentialParameterAndMSA()>method     LoginWithCredentialParameterAndMSA()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginWithAccessToken()>method     LoginWithAccessToken()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginPopulatesContextList()>method     LoginPopulatesContextList()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ThrowOnUnknownEnvironment()>method     ThrowOnUnknownEnvironment()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LoginUsingSkipValidation()>method     LoginUsingSkipValidation()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=AddEnvironmentUpdatesContext()>method     AddEnvironmentUpdatesContext()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class LoginCmdletTests</p></div></div><br>
 
 
     </div>
@@ -126,16 +145,16 @@
               
                       <ul class="list-unstyled">
                         <li>
-                          <a href="#!">SharpLiteDocs Github Repo</a>
+                          <a href="https://github.com/hyst3r1a/sharplitedocs/tree/cli">SharpLiteDocs Github Repo</a>
                         </li>
                         <li>
-                          <a href="#!">User Guide</a>
+                          <a href="https://github.com/hyst3r1a/sharplitedocs/tree/cli">User Guide</a>
                         </li>
                         <li>
-                          <a href="#!">Lab link</a>
+                          <a href="https://iss.csc.knu.ua/files/study/bachelor-degree/courses-2016-2018/metaprogramming/labs/lab-1.pdf">Lab link</a>
                         </li>
                         <li>
-                          <a href="#!">Example code repo</a>
+                          <a href="https://github.com/Azure/azure-powershell">Example code repo</a>
                         </li>
                       </ul>
               

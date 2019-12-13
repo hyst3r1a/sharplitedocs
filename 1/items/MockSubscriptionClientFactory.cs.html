@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../mainpage.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="#">Dirtree <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../dirtree.html">Dirtree <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="#">Index <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Index <span class="sr-only">(current)</span></a>
                       </li>
                       
                 
@@ -44,30 +44,41 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Microsoft.Azure.Internal.Subscriptions;<br> 
+using Microsoft.Azure.Internal.Subscriptions.Models;<br> 
+using Microsoft.Rest.Azure;<br> 
+using Moq;<br> 
+using System;<br> 
+using System.Collections.Generic;<br> 
+using System.Linq;<br> 
+using System.Net;<br> 
+using System.Threading;<br> 
+using System.Threading.Tasks;<br> 
+using System.Collections;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>Microsoft.Azure.Commands.ResourceManager.Common.Test</p></li>
-<li class="list-group-item"><p>MockSubscriptionClientFactory</p></li>
-<li class="list-group-item"><p>_tenants;</p></li>
-<li class="list-group-item"><p>_subscriptions;</p></li>
-<li class="list-group-item"><p>_subscriptionSet;</p></li>
-<li class="list-group-item"><p>_getAsyncQueue;</p></li>
-<li class="list-group-item"><p>_listAsyncQueue;</p></li>
-<li class="list-group-item"><p>MockSubscriptionClientFactory()</p></li>
-<li class="list-group-item"><p>GetSubscriptionNameFromId()</p></li>
-<li class="list-group-item"><p>SetGetAsyncResponses()</p></li>
-<li class="list-group-item"><p>SetListAsyncResponses()</p></li>
-<li class="list-group-item"><p>GetSubscriptionClient()</p></li>
-<li class="list-group-item"><p>MockPage<T></p></li>
-<li class="list-group-item"><p>MockPage()</p></li>
-<li class="list-group-item"><p>MockPage()</p></li>
-<li class="list-group-item"><p>NextPageLink</p></li>
-<li class="list-group-item"><p>Items</p></li>
-<li class="list-group-item"><p>GetEnumerator()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.ResourceManager.Common.Test>namespace Microsoft.Azure.Commands.ResourceManager.Common.Test</a></li>
+<li class="list-group-item"><a href=#MockSubscriptionClientFactory>class MockSubscriptionClientFactory</a></li>
+<li class="list-group-item"><a href=#_tenants;>value _tenants;</a></li>
+<li class="list-group-item"><a href=#_subscriptions;>value _subscriptions;</a></li>
+<li class="list-group-item"><a href=#_subscriptionSet;>value _subscriptionSet;</a></li>
+<li class="list-group-item"><a href=#_getAsyncQueue;>value _getAsyncQueue;</a></li>
+<li class="list-group-item"><a href=#_listAsyncQueue;>value _listAsyncQueue;</a></li>
+<li class="list-group-item"><a href=#MockSubscriptionClientFactory()>method MockSubscriptionClientFactory()</a></li>
+<li class="list-group-item"><a href=#GetSubscriptionNameFromId()>method GetSubscriptionNameFromId()</a></li>
+<li class="list-group-item"><a href=#SetGetAsyncResponses()>method SetGetAsyncResponses()</a></li>
+<li class="list-group-item"><a href=#SetListAsyncResponses()>method SetListAsyncResponses()</a></li>
+<li class="list-group-item"><a href=#GetSubscriptionClient()>method GetSubscriptionClient()</a></li>
+<li class="list-group-item"><a href=#MockPage<T>>class MockPage<T></a></li>
+<li class="list-group-item"><a href=#MockPage()>method MockPage()</a></li>
+<li class="list-group-item"><a href=#MockPage()>method MockPage()</a></li>
+<li class="list-group-item"><a href=#NextPageLink>property NextPageLink</a></li>
+<li class="list-group-item"><a href=#Items>property Items</a></li>
+<li class="list-group-item"><a href=#GetEnumerator()>method GetEnumerator()</a></li>
 </ol>
 
              
@@ -75,7 +86,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespaceMicrosoft.Azure.Commands.ResourceManager.Common.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-MockSubscriptionClientFactory</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">classMockSubscriptionClientFactory</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-_tenants;-_subscriptions;-_subscriptionSet;-_getAsyncQueue;-_listAsyncQueue;-MockSubscriptionClientFactory()-GetSubscriptionNameFromId()-SetGetAsyncResponses()-SetListAsyncResponses()-GetSubscriptionClient()-MockPage<T></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.ResourceManager.Common.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value_tenants;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value_subscriptions;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value_subscriptionSet;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value_getAsyncQueue;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">value_listAsyncQueue;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodMockSubscriptionClientFactory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodGetSubscriptionNameFromId()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodSetGetAsyncResponses()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodSetListAsyncResponses()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodGetSubscriptionClient()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">classMockPage<T></h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-MockPage()-MockPage()-NextPageLink-Items-GetEnumerator()</p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodMockPage()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodMockPage()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">propertyNextPageLink</h5><p class="card-text">['/// <summary>', '/// Gets the link to the next page.', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">propertyItems</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodGetEnumerator()</h5><p class="card-text">['/// <summary>', '/// Returns an enumerator that iterates through the collection.', '/// </summary>', '/// <returns>A an enumerator that can be used to iterate through the collection.</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.ResourceManager.Common.Test>namespace     Microsoft.Azure.Commands.ResourceManager.Common.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-MockSubscriptionClientFactory<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MockSubscriptionClientFactory>class     MockSubscriptionClientFactory</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-_tenants;<br>-_subscriptions;<br>-_subscriptionSet;<br>-_getAsyncQueue;<br>-_listAsyncQueue;<br>-MockSubscriptionClientFactory()<br>-GetSubscriptionNameFromId()<br>-SetGetAsyncResponses()<br>-SetListAsyncResponses()<br>-GetSubscriptionClient()<br>-MockPage<T><br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.ResourceManager.Common.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_tenants;>value     _tenants;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_subscriptions;>value     _subscriptions;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_subscriptionSet;>value     _subscriptionSet;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_getAsyncQueue;>value     _getAsyncQueue;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=_listAsyncQueue;>value     _listAsyncQueue;</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MockSubscriptionClientFactory()>method     MockSubscriptionClientFactory()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetSubscriptionNameFromId()>method     GetSubscriptionNameFromId()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetGetAsyncResponses()>method     SetGetAsyncResponses()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=SetListAsyncResponses()>method     SetListAsyncResponses()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetSubscriptionClient()>method     GetSubscriptionClient()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MockPage<T>>class     MockPage<T></h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-MockPage()<br>-MockPage()<br>-NextPageLink<br>-Items<br>-GetEnumerator()<br></p><hr><h6>Member of:</h6><p class="card-text">class MockSubscriptionClientFactory</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MockPage()>method     MockPage()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=MockPage()>method     MockPage()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=NextPageLink>property     NextPageLink</h5><p class="card-text">['/// <summary>', '/// Gets the link to the next page.', '/// </summary>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Items>property     Items</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=GetEnumerator()>method     GetEnumerator()</h5><p class="card-text">['/// <summary>', '/// Returns an enumerator that iterates through the collection.', '/// </summary>', '/// <returns>A an enumerator that can be used to iterate through the collection.</returns>']</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class MockPage<T></p></div></div><br>
 
 
     </div>
@@ -121,16 +132,16 @@
               
                       <ul class="list-unstyled">
                         <li>
-                          <a href="#!">SharpLiteDocs Github Repo</a>
+                          <a href="https://github.com/hyst3r1a/sharplitedocs/tree/cli">SharpLiteDocs Github Repo</a>
                         </li>
                         <li>
-                          <a href="#!">User Guide</a>
+                          <a href="https://github.com/hyst3r1a/sharplitedocs/tree/cli">User Guide</a>
                         </li>
                         <li>
-                          <a href="#!">Lab link</a>
+                          <a href="https://iss.csc.knu.ua/files/study/bachelor-degree/courses-2016-2018/metaprogramming/labs/lab-1.pdf">Lab link</a>
                         </li>
                         <li>
-                          <a href="#!">Example code repo</a>
+                          <a href="https://github.com/Azure/azure-powershell">Example code repo</a>
                         </li>
                       </ul>
               

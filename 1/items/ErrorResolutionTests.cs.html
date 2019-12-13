@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../mainpage.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="#">Dirtree <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../dirtree.html">Dirtree <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="#">Index <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Index <span class="sr-only">(current)</span></a>
                       </li>
                       
                 
@@ -44,20 +44,32 @@
        
           <div class="just-padding" >
                    <h3>Import directives</h3>
+using Hyak.Common;<br> 
+using Microsoft.Azure.Commands.Profile.Errors;<br> 
+using Microsoft.Azure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Common.Test.Mocks;<br> 
+using Microsoft.WindowsAzure.Commands.ScenarioTest;<br> 
+using Microsoft.WindowsAzure.Commands.Utilities.Common;<br> 
+using System;<br> 
+using System.Collections.Generic;<br> 
+using System.Management.Automation;<br> 
+using System.Net;<br> 
+using System.Net.Http;<br> 
+using Xunit;<br> 
 
 
                   <br><br>
                   <h3>File members</h3>
                   <hr>
                     <h3>Members list</h3>
-<ol class="list-group" style="left:20px"><li class="list-group-item"><p>Microsoft.Azure.Commands.Profile.Test</p></li>
-<li class="list-group-item"><p>ErrorResolutionTests</p></li>
-<li class="list-group-item"><p>TestHyakException</p></li>
-<li class="list-group-item"><p>base()</p></li>
-<li class="list-group-item"><p>DoesNotThrowWithNullError()</p></li>
-<li class="list-group-item"><p>HandlesExceptionError()</p></li>
-<li class="list-group-item"><p>HandlesNullValuesInArmExceptions()</p></li>
-<li class="list-group-item"><p>LastParameterFindsLastError()</p></li>
+<ol class="list-group" style="left:20px"><li class="list-group-item"><a href=#Microsoft.Azure.Commands.Profile.Test>namespace Microsoft.Azure.Commands.Profile.Test</a></li>
+<li class="list-group-item"><a href=#ErrorResolutionTests>class ErrorResolutionTests</a></li>
+<li class="list-group-item"><a href=#TestHyakException>class TestHyakException</a></li>
+<li class="list-group-item"><a href=#base()>method base()</a></li>
+<li class="list-group-item"><a href=#DoesNotThrowWithNullError()>method DoesNotThrowWithNullError()</a></li>
+<li class="list-group-item"><a href=#HandlesExceptionError()>method HandlesExceptionError()</a></li>
+<li class="list-group-item"><a href=#HandlesNullValuesInArmExceptions()>method HandlesNullValuesInArmExceptions()</a></li>
+<li class="list-group-item"><a href=#LastParameterFindsLastError()>method LastParameterFindsLastError()</a></li>
 </ol>
 
              
@@ -65,7 +77,7 @@
         
           <br>
           <h3>Detailed descriptions</h3>
- <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">namespaceMicrosoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ErrorResolutionTests</p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">classErrorResolutionTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-TestHyakException-DoesNotThrowWithNullError()-HandlesExceptionError()-HandlesNullValuesInArmExceptions()-LastParameterFindsLastError()</p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">classTestHyakException</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-base()</p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodbase()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TestHyakException</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodDoesNotThrowWithNullError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodHandlesExceptionError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodHandlesNullValuesInArmExceptions()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title">methodLastParameterFindsLastError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br>
+ <hr><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=Microsoft.Azure.Commands.Profile.Test>namespace     Microsoft.Azure.Commands.Profile.Test</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-ErrorResolutionTests<br></p><hr><h6>Member of:</h6><p class="card-text"></p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=ErrorResolutionTests>class     ErrorResolutionTests</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-TestHyakException<br>-DoesNotThrowWithNullError()<br>-HandlesExceptionError()<br>-HandlesNullValuesInArmExceptions()<br>-LastParameterFindsLastError()<br></p><hr><h6>Member of:</h6><p class="card-text">namespace Microsoft.Azure.Commands.Profile.Test</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=TestHyakException>class     TestHyakException</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text">-base()<br></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=base()>method     base()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class TestHyakException</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=DoesNotThrowWithNullError()>method     DoesNotThrowWithNullError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=HandlesExceptionError()>method     HandlesExceptionError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=HandlesNullValuesInArmExceptions()>method     HandlesNullValuesInArmExceptions()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br><div class="card" style="width: 80%"><div class="card-body"><h5 class="card-title" id=LastParameterFindsLastError()>method     LastParameterFindsLastError()</h5><p class="card-text">[]</p><hr> <h6>Derived from that class</h6><p class="card-text"></p><hr><h6>Member of:</h6><p class="card-text">class ErrorResolutionTests</p></div></div><br>
 
 
     </div>
@@ -111,16 +123,16 @@
               
                       <ul class="list-unstyled">
                         <li>
-                          <a href="#!">SharpLiteDocs Github Repo</a>
+                          <a href="https://github.com/hyst3r1a/sharplitedocs/tree/cli">SharpLiteDocs Github Repo</a>
                         </li>
                         <li>
-                          <a href="#!">User Guide</a>
+                          <a href="https://github.com/hyst3r1a/sharplitedocs/tree/cli">User Guide</a>
                         </li>
                         <li>
-                          <a href="#!">Lab link</a>
+                          <a href="https://iss.csc.knu.ua/files/study/bachelor-degree/courses-2016-2018/metaprogramming/labs/lab-1.pdf">Lab link</a>
                         </li>
                         <li>
-                          <a href="#!">Example code repo</a>
+                          <a href="https://github.com/Azure/azure-powershell">Example code repo</a>
                         </li>
                       </ul>
               
