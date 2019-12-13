@@ -1,7 +1,7 @@
 import argparse
 import errno
 import os
-
+from shutil import copyfile
 from pyfiglet import Figlet
 
 import filegen
@@ -95,3 +95,5 @@ filegen.generate_main_page(args.name, "v0.1", str(sharplitedocs.files), str(len(
 for i in sharplitedocs.tokens:
     list_names.append(str(i.tokenLocalName))
 filegen.generate_index(list_names, args.name, args.destination)
+copyfile("styles.css", args.destination +"/styles.css")
+copyfile("styles.css", args.destination + "/items/styles.css")
